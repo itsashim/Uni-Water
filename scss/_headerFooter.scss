@@ -1,0 +1,134 @@
+// Heder Section
+.header_sec {
+  // Header Subhead
+  .sub_head {
+    background-color: #d3e4e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+    p {
+      a {
+        font-size: clamp(12px, 2.5vw, 18px);
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .sub_head_a_dash {
+        color: $primary_color;
+        border-bottom: 3px solid $primary_color;
+        padding: 0 6px;
+        padding-bottom: 4px;
+      }
+      .sub_head_a {
+        color: #545454;
+      }
+    }
+  }
+  // header subhead end
+
+  // header nav
+
+  nav {
+    background-color: $primary_light;
+    padding-inline: 5%;
+
+    .nav_item {
+      text-align: center;
+      font-size: $nav_font;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 21px; /* 150% */
+      text-transform: uppercase;
+      a {
+        color: $white;
+      }
+    }
+
+    .nav-link.active {
+      border-bottom: 3px solid $white;
+    }
+
+    .nav_buttons {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      figure {
+        i {
+          font-size: 26px;
+          color: $white;
+        }
+      }
+      button {
+        display: flex;
+        height: 48px;
+        padding: 8px 32px;
+        align-items: center;
+        gap: 10px;
+        color: $primary_light;
+        font-weight: 600;
+        border: none;
+      }
+    }
+  }
+  // header nav end
+}
+// Header Secton End
+
+// Footer section
+
+footer {
+  padding: 4rem 4%;
+  padding-bottom: 0;
+  background-color: $main_background;
+}
+.footer_sec {
+  border-radius: 10px;
+  background-color: $primary_light;
+  padding: 3rem 5%;
+}
+
+.footer_sec_wrapper {
+  .footer_logo {
+    width: 100%;
+    img {
+      width: 80%;
+    }
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    width: 80%;
+    padding: 0.5rem;
+    input {
+      // border: 1px solid red !important;
+      border: none !important;
+      background-color: $primary_light;
+      width: 100%;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        outline: none !important ;
+      }
+    }
+  }
+
+  // footer center
+  .footer_center {
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
+.footer_bottom {
+  border-top: 1px solid #8ab5c9;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+// Footer section End

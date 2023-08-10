@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+}
+
+.head_first {
+  color: #006882;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.para {
+  color: #586c72;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}/*# sourceMappingURL=config.css.map */

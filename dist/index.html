@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Project</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- line awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Google Fonts Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl carousel cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Owl carousel cdn end-->
+  </head>
+  <body>
+    <!-- header Section -->
+    <header class="header_sec">
+      <div class="sub_head">
+        <p><a class="sub_head_a_dash" href="#">residental solutions</a></p>
+        <p>
+          <a class="sub_head_a" href="#">industrail and commercial solutions</a>
+        </p>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/Weblogo.png" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item nav_item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item nav_item">
+                <a class="nav-link" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item nav_item">
+                <a class="nav-link" aria-current="page" href="#">Blog</a>
+              </li>
+            </ul>
+            <div class="nav_buttons">
+              <figure class="m-0"><i class="lar la-user"></i></figure>
+              <figure class="m-0"><i class="las la-shopping-cart"></i></figure>
+              <button class="rounded">
+                <i class="las la-phone"></i> Contact
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header Section end-->
+    <!-- Main -->
+    <main class="main">
+      <!-- hero Section -->
+      <section class="hero_sec">
+        <div class="hero_sec_wrapper">
+          <div class="row container-md mx-auto mt-4">
+            <div class="hero_left col-lg-6">
+              <h1 class="head_first blue text-center mt-5">
+                Better Water Made Simple
+              </h1>
+              <p class="para text-center mx-auto">
+                We offer personalised water treatment services and customised
+                solutions to solve all your water problems.
+              </p>
+            </div>
+            <div class="hero_right col-lg-6">
+              <figure class="m-0">
+                <img
+                  class="hero_img"
+                  src="assets/heroImg.png"
+                  alt="Kid drinking water on Water Tap"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="hero_search">
+            <h3 class="head_third text-white">What are you looking for?</h3>
+            <ul class="p-0 d-flex gap-4">
+              <li class="search_li">
+                <div class="search_icon">
+                  <img src="assets/location.svg" alt="Icon of " />
+                </div>
+                <div class="w-100 ">
+                  <label class="d-block" for="location">I live in</label>
+                  <div class="d-flex justify-content-cetner align-items-center">
+                    <select type="text" class="w-100">
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="India">India</option>
+                      <option value="Nepal">Nepal</option>
+                    </select>
+                    <div class="down_arrow">
+                      <img src="assets/downArrow.svg" alt="down arrow" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="search_li">
+                <div class="search_icon">
+                  <img src="assets/lookingFor.svg" alt="Icon of " />
+                </div>
+                <div class="w-100 ">
+                  <label class="d-block" for="location">I am looking for</label>
+                  <div class="d-flex justify-content-cetner align-items-center">
+                    <select type="text" class="w-100">
+                      <option value="Jaipur">Whole house filter</option>
+                      <option value="India">India</option>
+                      <option value="Nepal">Nepal</option>
+                    </select>
+                    <div class="down_arrow">
+                      <img src="assets/downArrow.svg" alt="down arrow" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="search_li">
+                <div class="search_icon">
+                  <img src="assets/apartment.svg" alt="Icon of " />
+                </div>
+                <div class="w-100">
+                  <label class="d-block" for="location">For my</label>
+                  <div class="d-flex justify-content-cetner align-items-center">
+                    <select type="text" class="w-100" placeholder="Jaipur">
+                      <option value="Jaipur">Apartment</option>
+                      <option value="India">India</option>
+                      <option value="Nepal">Nepal</option>
+                    </select>
+                    <div class="down_arrow">
+                      <img src="assets/downArrow.svg" alt="down arrow" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="search_li bg-white">
+                <button class="bg-white w-100 blue">
+                  <span class="me-2"
+                    ><img src="assets/searchGlass.svg" alt="" /></span
+                  >Search
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="splash_img">
+            <img src="assets/splash.svg" alt="water splash" />
+          </div>
+        </div>
+      </section>
+      <!-- hero Section end -->
+
+      <!-- marque Sectionn -->
+      <section class="marque_sec">
+        <div class="marque d-flex gap-2">
+          |
+          <p class="m-0">All Products Now At 20% Off</p>
+          |
+        </div>
+      </section>
+      <!-- marque Sectionn end -->
+
+      <!-- the best Section -->
+      <section class="best_sec">
+        <div class="best_sec_wrapper px-3">
+          <h3 class="head_second text-center">We provide you the best</h3>
+          <p class="para text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            laboriosam dignissimos exercitationem. Quod laborum excepturi quo.
+          </p>
+
+          <ul class="mt-5 p-0 d-flex gap-5 flex-wrap justify-content-center">
+            <li>
+              <div class="best_icon_div mb-3">
+                <img src="assets/ISOcertified.svg" alt="" />
+              </div>
+              <h3 class="head_third text-center blue">ISO Certified</h3>
+              <p class="para text-center">
+                Industry-leading results for your peace of mind Industry-leading
+                results
+              </p>
+            </li>
+
+            <li>
+              <div class="best_icon_div mb-3">
+                <img src="assets/liveWarranty.svg" alt="" />
+              </div>
+              <h3 class="head_third text-center blue">Life Time Warranty</h3>
+              <p class="para text-center">
+                Industry-leading results for your peace of mind Industry-leading
+                results
+              </p>
+            </li>
+
+            <li>
+              <div class="best_icon_div mb-3">
+                <img src="assets/satisfaction.svg" alt="" />
+              </div>
+              <h3 class="head_third text-center blue">100% Satisfaction</h3>
+              <p class="para text-center">
+                Industry-leading results for your peace of mind Industry-leading
+                results
+              </p>
+            </li>
+
+            <li>
+              <div class="best_icon_div mb-3">
+                <img src="assets/genuine.svg" alt="" />
+              </div>
+              <h3 class="head_third text-center blue">Genuine Products</h3>
+              <p class="para text-center">
+                Industry-leading results for your peace of mind Industry-leading
+                results
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- the best Section End -->
+
+      <!-- pricing -->
+      <section class="pricing_sec">
+        <div class="pricing">
+          <div class="pricing_sec_wrapper">
+            <h3 class="head_second text-center">Clean Water as Service</h3>
+            <p class="para text-center mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              consequatur
+            </p>
+
+            <div
+              id="pills-tab"
+              role="tablist"
+              class="nav nav-pills btn_group d-flex gap-4 justify-content-center flex-wrap mb-2"
+            >
+              <button
+                id="pricing_product_one-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_one"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_one"
+                aria-selected="true"
+                class="nav-link active d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+              <button
+                id="pricing_product_two-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_two"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_two"
+                aria-selected="false"
+                class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+              <button
+                id="pricing_product_three-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_three"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_three"
+                aria-selected="false"
+                class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- Pricing Product -->
+
+          <!-- Product one -->
+
+          <div
+            id="pricing_product_one"
+            role="tabpanel"
+            aria-labelledby="pricing_product_one-tab"
+            tabindex="0"
+            class="tab-pane fade show active product_wrapper d-lg-flex justify-content-center"
+          >
+            <div class="product_wrapper_img_div mx-auto align-self-center">
+              <img
+                src="assets/girlimage.png"
+                alt="Girl dirking water in a glass"
+              />
+            </div>
+            <div class="pricing_product bg-white">
+              <div class="d-md-flex justify-content-between">
+                <div class="pricing_content_head">
+                  <h4 class="head_fourth">Drinking water</h4>
+                  <p class="para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis suscipit earum ullam nesciunt laudantium, rem iure
+                    maiores totam quas odit fuga repellat eligendi corporis aut!
+                    Doloribus.
+                  </p>
+                </div>
+                <div class="text-end-lg">
+                  <h5>Starting at just</h5>
+                  <p class="price">$1 per liter</p>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="head_fourth">Available model</h4>
+                <ul>
+                  <li class="para">Single outlet</li>
+                  <li class="para">Multi outlet</li>
+                  <li class="para">Centralized</li>
+                </ul>
+                <div
+                  class="buttons_grp d-sm-flex justify-content-between gap-2"
+                >
+                  <button class="para text-white mb-2">Book a visit</button>
+                  <button class="para bg-white mb-2">Talk to sales</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product one End-->
+
+          <!-- Product two -->
+          <div
+            id="pricing_product_two"
+            role="tabpanel"
+            aria-labelledby="pricing_product_two-tab"
+            tabindex="0"
+            class="tab-pane fade product_wrapper d-lg-flex justify-content-center"
+          >
+            <div class="product_wrapper_img_div mx-auto align-self-center">
+              <img
+                src="assets/softWaterImage.png"
+                alt="Girl dirking water in a glass"
+              />
+            </div>
+            <div class="pricing_product bg-white">
+              <div class="d-md-flex justify-content-between">
+                <div class="pricing_content_head">
+                  <h4 class="head_fourth">Drinking water</h4>
+                  <p class="para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis suscipit earum ullam nesciunt laudantium, rem iure
+                    maiores totam quas odit fuga repellat eligendi corporis aut!
+                    Doloribus.
+                  </p>
+                </div>
+                <div class="text-end-lg">
+                  <h5>Starting at just</h5>
+                  <p class="price">$1 per liter</p>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="head_fourth">Available model</h4>
+                <ul>
+                  <li class="para">Single outlet</li>
+                  <li class="para">Multi outlet</li>
+                  <li class="para">Centralized</li>
+                </ul>
+                <div
+                  class="buttons_grp d-sm-flex justify-content-between gap-2"
+                >
+                  <button class="para text-white mb-2">Book a visit</button>
+                  <button class="para bg-white mb-2">Talk to sales</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product two end -->
+
+          <!-- Product three -->
+          <div
+            id="pricing_product_three"
+            role="tabpanel"
+            aria-labelledby="pricing_product_three-tab"
+            tabindex="0"
+            class=" tab-pane fade  product_wrapper d-lg-flex justify-content-center "
+          >
+            <div class="product_wrapper_img_div mx-auto align-self-center">
+              <img
+                src="assets/ironWater.png"
+                alt="Girl dirking water in a glass"
+              />
+            </div>
+            <div class="pricing_product bg-white">
+              <div class="d-md-flex justify-content-between">
+                <div class="pricing_content_head">
+                  <h4 class="head_fourth">Drinking water</h4>
+                  <p class="para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis suscipit earum ullam nesciunt laudantium, rem iure
+                    maiores totam quas odit fuga repellat eligendi corporis aut!
+                    Doloribus.
+                  </p>
+                </div>
+                <div class="text-end-lg">
+                  <h5>Starting at just</h5>
+                  <p class="price">$1 per liter</p>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="head_fourth">Available model</h4>
+                <ul>
+                  <li class="para">Single outlet</li>
+                  <li class="para">Multi outlet</li>
+                  <li class="para">Centralized</li>
+                </ul>
+                <div
+                  class="buttons_grp d-sm-flex justify-content-between gap-2"
+                >
+                  <button class="para text-white mb-2">Book a visit</button>
+                  <button class="para bg-white mb-2">Talk to sales</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product three end -->
+
+          <!-- Pricing Product End-->
+          <!-- alert  -->
+          <div class="alert_">
+            <p class="para m-0 text-center px-5">
+              For a visit a visiting charge of ₹ 199 will be charged which will
+              be later on adjusted in your overall billing amount.
+            </p>
+          </div>
+          <!-- alert end -->
+        </div>
+      </section>
+      <!-- pricing End -->
+
+      <!-- testimonial section -->
+      <section class="testimonial_sec">
+        <div class="testimonial_sec_wrapper">
+          <div class="testimonial_header d-lg-flex justify-content-between">
+            <h2 class="head_second d-block">
+              Listen to what are valuable customer are saying
+            </h2>
+            <p class="para d-block">
+              It has been proven that our platform has been used by thousands of
+              people and they are satisfied with the services we provide
+            </p>
+          </div>
+
+          <div class="owl-carousel owl-theme" id="testimonial">
+            <div class="item item_child">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item_child2">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item_child3">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item_child">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item_child2">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item_child3">
+              <div class="testimonial">
+                <i class="quote fa-solid fa-quote-left"></i>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do
+                </p>
+                <div
+                  class="profile d-flex gap-3 justify-content-start align-items-center"
+                >
+                  <div class="profile_img_div">
+                    <img src="assets/testimonialProfile.svg" />
+                  </div>
+                  <div class="profile_content">
+                    <strong class="head_fifth">Ashim Rai</strong>
+                    <p class="para">Posted on 03 May 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section end -->
+
+      <!-- Cta section -->
+      <section class="cta_sec">
+        <img
+          class="cta_img d-block mx-auto"
+          src="assets/Clean water as a Service.png"
+        />
+      </section>
+      <!-- Cta section end -->
+    </main>
+    <!-- Main End-->
+    <footer>
+      <div class="footer_sec">
+        <div class="footer_sec_wrapper row justify-content-between">
+          <div class="footer_left col-lg-4 mb-5 col-md-12">
+            <div class="footer_logo mb-4">
+              <img src="assets/Weblogo.png" alt="Website logo " />
+            </div>
+            <p class="para text-white">
+              An end to - end water quality management company tackling water
+              problems faced by residents and business
+            </p>
+            <p class="para text-white">Request a callback</p>
+            <form>
+              <input
+                class="text-white"
+                type="text"
+                placeholder="Mobile Number"
+              />
+              <button class="btn bg-white para primary_color">Request</button>
+            </form>
+          </div>
+          <div class="footer_center col-lg-4 mb-5 d-flex gap-5 col-md-12">
+            <div class="">
+              <h3 class="head_third text-white mb-3">Quick Links</h3>
+              <ul class="p-0">
+                <li>
+                  <p class="para text-white">Home</p>
+                </li>
+                <li><p class="para text-white">Service</p></li>
+                <li><p class="para text-white">About us</p></li>
+                <li><p class="para text-white">Products</p></li>
+                <li><p class="para text-white">Contact us</p></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="head_third text-white mb-3">Products</h3>
+              <ul class="p-0">
+                <li>
+                  <p class="para text-white">Particle Filters</p>
+                </li>
+                <li><p class="para text-white">Iron Removal Filter</p></li>
+                <li><p class="para text-white">Water Softeners</p></li>
+                <li><p class="para text-white">Arsenic Filters</p></li>
+                <li><p class="para text-white">Drinking Water</p></li>
+                <li><p class="para text-white">Ro/DM Plants</p></li>
+                <li><p class="para text-white">Activated Carbon Filter</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right mb-5 col-lg-3 col-md-12">
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="assets/callIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Monday - Saturday (9Am - 7PM)</span>
+                <p class="para text-white">+91 96584 89658</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="assets/messageIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Write to us</span>
+                <p class="para text-white">info@uinwater.com</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="assets/networkIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Social Networks</span>
+                <div>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f text-white me-2"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in text-white me-2"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram text-white me-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p class="para text-white">
+            Copyright © 2023 Uniwater Solutions | Powered by Uniwater Solutions
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/5cfe83b03e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Jquery Cdn -->
+
+    <!-- Owl carousel cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl carousel cdn end -->
+
+    <!-- Owl carousel  -->
+    <script>
+
+      $(document).ready(function(){
+              $('#testimonial').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                navText: [],
+                dotsEach: true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false
+                    },
+                    1000:{
+                        items:3,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            })
+          });
+    </script>
+  </body>
+</html>
