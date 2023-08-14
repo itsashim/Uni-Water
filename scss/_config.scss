@@ -9,16 +9,65 @@ $primary_light: #005f89;
 $main_background: #f5f9fa;
 $head_color: #006882;
 $para_color: #586c72;
+$gray_color: #545454;
 
 $nav_font: 14px;
-$para_font: clamp(12px, 2.5vw, 20px);
+$para_font: clamp(12px, 2.5vw, 17px);
 $font_first: clamp(35px, 5vw, 72px);
 $font_second: clamp(25px, 5vw, 48px);
-$font_third: clamp(20px, 2.5vw, 25px);
-$font_fourth: clamp(24px, 2.5vw, 32px);
+$font_third: clamp(28px, 2.5vw, 36px);
+$font_fourth: clamp(24px, 2.5vw, 30px);
 $font_fifth: clamp(20px, 2.5vw, 28px);
 
-$margin_sec: 3% 4%;
+$margin_sec: 4rem 5%;
+
+// Utilities Classes End
+
+@mixin flexCenter {
+  display: flex !important ;
+  justify-content: center;
+  align-items: center;
+}
+@mixin blockCenter {
+  display: block;
+  margin-inline: auto;
+}
+
+// desktop to mobile
+@mixin media-md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (max-width: 990px) {
+    @content;
+  }
+}
+
+@mixin media-lg-x {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+// Key Frames
+
+@keyframes inline-scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 
 // head first
 
@@ -31,7 +80,12 @@ $margin_sec: 3% 4%;
 // Utilities Classes
 body {
   font-family: $lato_font;
+  background-color: $main_background !important;
 }
+a {
+  text-decoration: none !important;
+}
+
 .head_first {
   font-size: $font_first;
   font-style: normal;
@@ -73,53 +127,59 @@ body {
   font-size: 16px;
 }
 
-.primary_color {
-  color: $primary_light !important;
+.text_primary_color {
+  color: $primary_color !important;
 }
 
-.blue {
+.text_blue {
   color: $head_color;
 }
-// Utilities Classes End
 
-@mixin flexCenter {
-  display: flex !important ;
-  justify-content: center;
+.text_gray {
+  color: $gray_color !important;
+}
+
+.ch65 {
+  max-width: 65ch;
+}
+
+.ch75 {
+  max-width: 75ch;
+}
+
+.bg_primary_color {
+  background-color: $primary_color !important;
+}
+
+.main_btn {
+  display: flex;
+  height: 48px;
+  padding: 8px 32px;
   align-items: center;
+  gap: 10px;
+  color: $primary_light;
+  font-weight: 600;
+  border: none;
 }
 
-// desktop to mobile
-@mixin media-md {
-  @media (max-width: 768px) {
-    @content;
-  }
+.product_btns {
+  // max-width: 325px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 4px;
+  background-color: $primary_light;
+  border: 1px solid #005f89;
 }
 
-@mixin media-lg {
-  @media (max-width: 990px) {
-    @content;
-  }
+.line {
+  height: 1px;
+  width: 90%;
+  background-color: #d3e4e9;
+  @include blockCenter;
 }
 
-@mixin media-lg-x {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin media-xxl {
-  @media (max-width: 1400px) {
-    @content;
-  }
-}
-
-// Key Frames
-
-@keyframes inline-scroll {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
+.hide {
+  display: none !important;
 }

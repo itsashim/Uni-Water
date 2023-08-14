@@ -3,10 +3,12 @@
 @import "directChanges";
 @import "headerFooter";
 
+// Pages Css
+@import "pages/solution";
+@import "pages/talkToSales";
+
 // main section
 .main {
-  background-color: $main_background !important;
-
   // Hero Section
   .hero_sec {
     margin: $margin_sec;
@@ -32,9 +34,9 @@
         position: absolute;
         background-color: rgba(0, 95, 137, 0.75);
         backdrop-filter: blur(20px);
-        margin: 0 auto;
         left: 50%;
         transform: translate(-50%, -145%);
+        @include blockCenter;
         ul {
           flex-direction: row;
         }
@@ -208,14 +210,6 @@
           width: 70%;
         }
         .buttons_grp {
-          button {
-            // max-width: 325px;
-            width: 100%;
-            padding: 6px 0;
-            border-radius: 4px;
-            background-color: $primary_light;
-            border: 1px solid #005f89;
-          }
         }
       }
     }
@@ -230,7 +224,6 @@
       padding: 10px 0;
       background-color: #ffedd9;
       width: 85%;
-      // margin: 0 auto;
       p {
         color: #ff8a00 !important;
       }

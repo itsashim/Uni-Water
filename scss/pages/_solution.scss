@@ -1,0 +1,76 @@
+.main {
+  // bread crumb section
+  .bread_crumb_sec {
+    width: 90%;
+    background-color: #eeefff;
+  }
+  // bread crumb section
+
+  .just_for_you_sec {
+    width: 90%;
+    .main_btn {
+      width: 160px;
+      padding: 0 !important;
+      justify-content: center;
+    }
+  }
+}
+
+// Products
+.special_products_sec {
+  margin: $margin_sec;
+}
+
+.product_img {
+  padding: 20px;
+  background: #e1f5f8;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.product {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  h6 {
+    color: #545454;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+}
+// Products end
+
+// Related Products
+
+.related_products_sec {
+  margin: $margin_sec;
+}
+
+.related_products {
+  .product {
+    max-width: 300px;
+  }
+}
+// Related Products End
+
+// Accodrion Section
+.accordion_sec {
+  margin: $margin_sec;
+}
+.accordion_sec_wrapper {
+  background-color: white;
+  padding: 2% 4%;
+  .accordion_item {
+    background-color: #effafb !important;
+    button {
+      padding: 1rem;
+    }
+  }
+}
+.still_Q {
+  background-color: #367176;
+  box-shadow: 0px 4px 23px 3px rgba(54, 113, 118, 0.25);
+}
+// Accodrion Section End

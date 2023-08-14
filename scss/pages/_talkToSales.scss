@@ -1,0 +1,55 @@
+// Form Section
+
+.form_sec {
+  a {
+    margin: $margin_sec;
+    border-bottom: 1px solid #005f89;
+    color: #005f89;
+    width: 10%;
+  }
+  .form_sec_wrapper {
+    margin: $margin_sec;
+    background-color: white;
+    padding: 5%;
+
+    .form_sec_main {
+      // border: 1px solid red;
+      .main_btn {
+        color: white;
+        background-color: #005f89;
+        @include flexCenter;
+        width: 100%;
+      }
+    }
+
+    .form_img {
+      img {
+        width: 100%;
+      }
+    }
+
+    .head_fourth {
+      color: #545454;
+    }
+    .checkbox {
+      display: none;
+    }
+    .checkbox_box_content {
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      min-width: 200px;
+      max-width: 253px;
+      height: 48px;
+      color: #8a8a8a;
+      font-size: 14px;
+      font-weight: 500;
+      @include flexCenter;
+    }
+
+    .checkbox_box .checkbox:checked ~ .checkbox_box_content {
+      color: white;
+      background-color: #005f89;
+    }
+  }
+}
+// Form Section End
