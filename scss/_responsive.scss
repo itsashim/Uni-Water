@@ -1,58 +1,31 @@
-@include media-xxl {
-  .hero_search {
-    transform: translate(-50%, -145%);
-  }
-}
+@include media-sm {
+  // Key filter section
+  .key_filter_wrapper {
+    justify-content: center !important;
+    label {
+      .checkbox_box {
+        padding: 8px 22px !important;
+        font-size: 10px !important;
+      }
 
-@include media-lg-x {
-  // hero search
-
-  .hero_search {
-    transform: translate(-50%, -65%) !important;
-  }
-
-  .splash_img {
-    transform: translate(100%, 26%) !important;
-  }
-  // hero search end
-
-  // alert div
-  .alert_ {
-    transform: translate(-50%, -110%) !important;
-  }
-  // alert div end
-}
-
-@include media-lg {
-  // hero search
-
-  .hero_search {
-    transform: translate(-50%, -135%) !important;
-    ul {
-      flex-direction: column !important;
+      & input[type="checkbox"] {
+        left: -2% !important;
+      }
     }
   }
-  .splash_img {
-    transform: translate(100%, 0%) !important;
-  }
-  // hero search end
-  // testimonail section
-  .testimonial_header {
-    h2,
-    p {
-      text-align: center !important;
-      margin: 0 auto;
-    }
-  }
-  // testimonail section end
+  // Key filter section End
 
-  // Pricing product
-  .product_wrapper {
-    &.active {
-      flex-direction: column !important;
+  // show Products section
+  .search_products {
+    gap: unset !important;
+    input {
+      min-width: unset !important;
+      background-color: #f6f9fa;
+      border: none !important;
+      width: 100% !important;
     }
   }
-  // pricing product end
+  // show Products section End
 }
 
 @include media-md {
@@ -97,4 +70,61 @@
     width: 100% !important;
   }
   // pricing section end
+}
+
+@include media-lg {
+  // hero search
+
+  .hero_search {
+    transform: translate(-50%, -135%) !important;
+    ul {
+      flex-direction: column !important;
+    }
+  }
+  .splash_img {
+    transform: translate(100%, 0%) !important;
+  }
+  // hero search end
+  // testimonail section
+  .testimonial_header {
+    h2,
+    p {
+      text-align: center !important;
+      margin: 0 auto;
+    }
+  }
+  // testimonail section end
+
+  // Pricing product
+  .product_wrapper {
+    &.active {
+      flex-direction: column !important;
+    }
+  }
+  // pricing product end
+}
+
+@include media-lg-x {
+  // hero search
+
+  .hero_search {
+    transform: translate(-50%, -65%) !important;
+  }
+
+  .splash_img {
+    transform: translate(100%, 26%) !important;
+  }
+  // hero search end
+
+  // alert div
+  .alert_ {
+    transform: translate(-50%, -110%) !important;
+  }
+  // alert div end
+}
+
+@include media-xxl {
+  .hero_search {
+    transform: translate(-50%, -145%);
+  }
 }

@@ -6,6 +6,7 @@
 // Pages Css
 @import "pages/solution";
 @import "pages/talkToSales";
+@import "pages/product";
 
 // main section
 .main {
@@ -209,8 +210,6 @@
         .pricing_content_head {
           width: 70%;
         }
-        .buttons_grp {
-        }
       }
     }
 
@@ -258,10 +257,6 @@
       .item_child2 {
         // transform: translate(0, -15%);
         padding-top: 1rem;
-      }
-
-      .item_child3 {
-        // transform: translate(0, -25%);
       }
     }
 

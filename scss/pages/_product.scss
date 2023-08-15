@@ -1,0 +1,119 @@
+.main {
+  .ad_img {
+    // border: 1px solid red;
+    width: 30%;
+    img {
+      // border: 1px solid red;
+      width: 55%;
+      &:nth-child(2) {
+        transform: translate(-25%, -15%);
+      }
+    }
+  }
+
+  // Key filter section
+  .key_filter {
+    .key_filter_wrapper {
+      width: 95%;
+      max-width: 430px;
+      justify-content: space-around;
+      background-color: white;
+      border: 1px solid #b0b0b0;
+      margin: $margin_sec;
+      @include blockCenter;
+
+      label {
+        padding: 4px;
+        // border: 1px solid red;
+        min-width: 150px;
+        position: relative;
+
+        input[type="checkbox"] {
+          position: absolute;
+          top: 50%;
+          left: 2%;
+          transform: translate(100%, -50%);
+        }
+        input:checked {
+          border-radius: 50%;
+        }
+
+        & input:checked ~ .checkbox_box {
+          background-color: #005f89;
+          color: white;
+        }
+        .checkbox_box {
+          padding: 8px 34px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  // Key filter section End
+
+  // Show Products
+
+  .show_products_sec {
+    margin: $margin_sec;
+    .show_products_wrapper {
+      // Search Products
+      .search_products {
+        // border: 1px solid red;
+        input {
+          min-width: 185px;
+          width: 30%;
+          border: 1px solid #b0b0b0;
+          padding: 11px 15px;
+        }
+      }
+      // Search Products End
+
+      // Products Fillter
+      .product_filter {
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          width: unset !important;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: unset !important;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: unset !important;
+          border-radius: unset !important;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: unset !important;
+        }
+        &::-webkit-scrollbar-corner {
+          background: transparent;
+        }
+
+        button {
+          min-width: 180px !important;
+          font-size: clamp(12px, 3vw, 14px) !important;
+          border: 1px solid $gray_color;
+          text-transform: uppercase;
+          &.active {
+            border: 1px solid $primary_light;
+            color: $primary_light !important;
+          }
+        }
+      }
+      // Products Fillter End
+    }
+  }
+
+  // Show Products End
+
+  // still q section
+
+  .still_Q {
+    margin: $margin_sec;
+  }
+  // still q section End
+}

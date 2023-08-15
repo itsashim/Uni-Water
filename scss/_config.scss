@@ -8,6 +8,7 @@ $primary_color: #0083cb;
 $primary_light: #005f89;
 $main_background: #f5f9fa;
 $head_color: #006882;
+$green_color: #2a8400;
 $para_color: #586c72;
 $gray_color: #545454;
 
@@ -34,6 +35,12 @@ $margin_sec: 4rem 5%;
 }
 
 // desktop to mobile
+@mixin media-sm {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
 @mixin media-md {
   @media (max-width: 768px) {
     @content;
@@ -135,6 +142,10 @@ a {
   color: $head_color;
 }
 
+.text_green {
+  color: $green_color;
+}
+
 .text_gray {
   color: $gray_color !important;
 }
@@ -149,6 +160,10 @@ a {
 
 .bg_primary_color {
   background-color: $primary_color !important;
+}
+
+.bg_primary_light {
+  background-color: $primary_light !important;
 }
 
 .main_btn {

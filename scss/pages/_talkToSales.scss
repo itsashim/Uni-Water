@@ -1,7 +1,7 @@
 // Form Section
 
 .form_sec {
-  a {
+  .back_link {
     margin: $margin_sec;
     border-bottom: 1px solid #005f89;
     color: #005f89;
@@ -51,5 +51,42 @@
       background-color: #005f89;
     }
   }
+
+  // Layout 2
+  .layout_2 {
+    .form_details {
+      form {
+        .detail {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #e6e6e6;
+          &::placeholder {
+            color: #8a8a8a;
+            font-size: 14px;
+          }
+        }
+        .buttons_grp {
+          // border: 1px solid red;
+          width: 100%;
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  // Layout 2 End
+
+  // Layout 3 confirmation
+  .confirmation {
+    width: 80%;
+    .profile_img {
+      .loader {
+        width: 80%;
+        max-width: 15rem;
+      }
+    }
+  }
+  // Layout 3 confirmation End
 }
 // Form Section End

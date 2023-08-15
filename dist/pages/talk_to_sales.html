@@ -12,12 +12,23 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
+    <!-- animat.css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- animate.css cdn end -->
   </head>
   <body>
     <main>
       <section class="form_sec">
-        <a href="/dist/index.html" class="d-block mt-5">Back to home page</a>
-        <div class="layout_1 form_sec_wrapper row rounded-3">
+        <a href="/dist/index.html" class="back_link d-block mt-5"
+          >Back to home page</a
+        >
+        <div
+          class="layout_1 form_sec_wrapper row rounded-3  animate__animated animate__bounceInLeft"
+        >
           <div class="form_img col-lg-6  mb-sm-4">
             <img src="/dist/assets/Glassofwater.png" alt="Glass of water" />
           </div>
@@ -93,7 +104,7 @@
               <span class="text_gray para mb-3 d-block"
                 >Select the date that works best for you</span
               >
-              <form class="d-flex flex-wrap gap-3">
+              <div class="d-flex flex-wrap gap-3">
                 <label for="time1" class="checkbox_box">
                   <input
                     id="time1"
@@ -149,151 +160,121 @@
                     >Mon, March 20</span
                   >
                 </label>
-              </form>
+              </div>
               <button class="form_next main_btn rounded mt-4">Next</button>
             </div>
           </div>
         </div>
 
         <!-- second layout -->
-        <div class="form_sec_wrapper row rounded-3 layout_2 hide">
+        <div
+          class="form_sec_wrapper row rounded-3 layout_2 animate__animated animate__bounceInLeft hide"
+        >
           <div class="form_img col-lg-6  mb-sm-4">
             <img src="/dist/assets/Glassofwater.png" alt="Glass of water" />
           </div>
           <div class="form_sec_main col-lg-6 ps-5">
-            <h3 class="head_third">Second layout</h3>
+            <h3 class="head_third">Book a Call now</h3>
             <p class="para">
               Our Uniwater experts are ready to help you find the right solution
-              for your water needs and concerns. ​
+              for your water needs and concerns. ​ ​
             </p>
-            <div class="select_date mb-4 mt-5">
-              <span class="para text_gray mb-3 d-block"
-                >Select the date that works best for you</span
-              >
-              <form class="d-flex flex-wrap gap-3">
-                <label for="date1" class="checkbox_box">
-                  <input
-                    id="date1"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
+            <div class="form_details mb-4 mt-5">
+              <form id="myForm" class="d-flex flex-wrap gap-3">
+                <input
+                  class="detail rounded"
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="detail rounded"
+                  name="number"
+                  type="text"
+                  placeholder="Phone Number"
+                />
+                <input
+                  class="detail rounded"
+                  name="email"
+                  type="text"
+                  placeholder="Email"
+                />
+                <input
+                  class="detail rounded"
+                  name="address"
+                  type="text"
+                  placeholder="Address"
+                />
+                <input
+                  class="detail rounded"
+                  name="city"
+                  type="text"
+                  placeholder="City"
+                />
+                <input
+                  class="detail rounded"
+                  name="state"
+                  type="text"
+                  placeholder="State"
+                />
+                <input
+                  class="detail rounded"
+                  name="code"
+                  type="text"
+                  placeholder="PIN Code"
+                />
+                <div class="buttons_grp mt-5 d-flex gap-2 ">
+                  <a
+                    href="#"
+                    class="form_back para text-white mb-2 product_btns"
                   >
-                </label>
-                <label for="date2" class="checkbox_box">
-                  <input
-                    id="date2"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="date3" class="checkbox_box">
-                  <input
-                    id="date3"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="date4" class="checkbox_box">
-                  <input
-                    id="date4"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="date5" class="checkbox_box">
-                  <input
-                    id="date5"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
+                    Back
+                  </a>
+                  <button class="book_a_call para bg-white mb-2 product_btns">
+                    Book a call now
+                  </button>
+                </div>
               </form>
-            </div>
-            <div class="select_time">
-              <span class="text_gray para mb-3 d-block"
-                >Select the date that works best for you</span
-              >
-              <form class="d-flex flex-wrap gap-3">
-                <label for="time1" class="checkbox_box">
-                  <input
-                    id="time1"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="time2" class="checkbox_box">
-                  <input
-                    id="time2"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="time3" class="checkbox_box">
-                  <input
-                    id="time3"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="time4" class="checkbox_box">
-                  <input
-                    id="time4"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-                <label for="time5" class="checkbox_box">
-                  <input
-                    id="time5"
-                    type="checkbox"
-                    placeholder="Hello"
-                    class="checkbox"
-                  />
-                  <span class="checkbox_box_content rounded"
-                    >Mon, March 20</span
-                  >
-                </label>
-              </form>
-              <button class="main_btn rounded mt-4">Book a call now</button>
             </div>
           </div>
         </div>
         <!-- second layout End-->
+
+        <!-- third layout -->
+        <div
+          class="form_sec_wrapper row rounded-3 layout_3 animate__animated animate__bounceInLeft hide"
+        >
+          <div class="form_img col-lg-6  mb-sm-4">
+            <img src="/dist/assets/Glassofwater.png" alt="Glass of water" />
+          </div>
+          <div class="form_sec_main col-lg-6 ps-5">
+            <h3 class="head_third">Confirmation</h3>
+            <div class="confirmation">
+              <div class="profile_img">
+                <video class="loader" loop autoplay>
+                  <source
+                    src="/dist/assets/LoadningScreen.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <p class="para">
+                Hey there
+                <span class="text_primary_color formName">SHUBHAM SINGH</span>,
+                we have received your request.
+              </p>
+              <p class="para">
+                Our customer representative will get in touch with you on
+              </p>
+              <p>Date:&nbsp; <span class="text_green">MON, MARCH 20</span></p>
+              <p>Time: &nbsp; <span class="text_green">3 PM - 5 PM</span></p>
+            </div>
+            <a href="/dist/index.html" class="main_btn rounded mt-4"
+              >Back to home page</a
+            >
+          </div>
+        </div>
+        <!-- third layout End-->
       </section>
     </main>
 
