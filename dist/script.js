@@ -18,6 +18,11 @@ $(document).ready(function () {
     $(".layout_3").toggleClass("hide");
   });
 
+  $(".proceed_to_pay").on("click", function () {
+    $(".layout_3").toggleClass("hide");
+    $(".layout_4").toggleClass("hide");
+  });
+
   $("#myForm").submit(function (event) {
     event.preventDefault();
 

@@ -1,0 +1,46 @@
+// Talk to sales and book a visit has similarities in UI
+// So more than half of the styles are in _talkToSales.scss file
+
+// Third layout
+.payment {
+  small {
+    font-size: 16px;
+  }
+  form {
+    .field {
+      border: 1px solid #e6e6e6;
+      padding: 1rem;
+      border-radius: 4px;
+
+      input {
+        width: 100%;
+        padding: 8px 8px 8px 24px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+      }
+
+      div {
+        input[placeholder="CVV"] {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .payment_button {
+    div {
+      small {
+        font-size: 12px;
+      }
+    }
+    button {
+      width: 60%;
+    }
+  }
+  .payment_qr {
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
+
+// Third layout End

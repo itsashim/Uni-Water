@@ -93,6 +93,16 @@
     <!-- header Section end-->
 
     <main class="main">
+      <!-- Bread Crumb -->
+      <section class="bread_crumb_sec mx-auto px-3 py-3 my-3 ">
+        <a href="../index.html" class="para text_primary_color">Home</a>
+        &nbsp;
+        <i class="las la-greater-than"></i>
+        &nbsp;
+        <span class="para">All Products</span>
+      </section>
+      <!-- Bread Crumb End -->
+
       <!-- Just for you section -->
       <section
         class="d-md-flex justify-content-between align-items-center mx-auto just_for_you_sec bg_primary_color px-5 py-4 rounded my-5"
@@ -113,21 +123,54 @@
 
       <!-- key filter section -->
       <section class="key_filter">
-        <div class="key_filter_wrapper d-flex rounded">
-          <label class="d-flex gap-2 ">
+        <div
+          class="key_filter_wrapper d-flex rounded nav-pills"
+          role="tablist"
+          class="nav  btn_group d-flex gap-4 justify-content-center flex-wrap mb-2"
+        >
+          <button
+            id="turn_key_solution"
+            data-bs-toggle="pill"
+            data-bs-target="#turn_key_sec"
+            type="button"
+            role="tab"
+            aria-controls="turn_key_sec"
+            aria-selected="true"
+            class=" d-flex gap-2 nav-link active d-flex align-items-center"
+          >
             <input type="checkbox" name="turn_key" id="turn_key" />
-            <div class="checkbox_box rounded">Turn Key solutions</div>
-          </label>
-          <label class="d-flex gap-2 ">
+            <label for="turn_key" class="checkbox_box rounded "
+              >Turn Key solutions</label
+            >
+          </button>
+
+          <button
+            id="clean_water_service"
+            data-bs-toggle="pill"
+            data-bs-target="#clean_service_sec"
+            type="button"
+            role="tab"
+            aria-controls="clean_service_sec"
+            aria-selected="true"
+            class="d-flex gap-2 nav-link d-flex align-items-center"
+          >
             <input type="checkbox" name="clean_service" id="clean_service" />
-            <div class="checkbox_box rounded">Clean water as service</div>
-          </label>
+            <label for="clean_service" class="rounded checkbox_box "
+              >Clean water as service</label
+            >
+          </button>
         </div>
       </section>
       <!-- key filter section  End-->
 
       <!-- Show Products -->
-      <section class="show_products_sec">
+      <section
+        id="turn_key_sec"
+        role="tabpanel"
+        aria-labelledby="turn_key_solution"
+        tabindex="0"
+        class="tab-pane fade show active show_products_sec"
+      >
         <div class="show_products_wrapper">
           <!-- Search Products -->
           <div class="search_products d-flex gap-3">
@@ -177,21 +220,363 @@
             </button>
           </div>
           <!-- Product Filter section End -->
+
+          <!-- Products  -->
+          <!-- Related Products -->
+          <div class="related_products_sec m-0">
+            <div class="related_products_sec_wrapper">
+              <div class="related_products row gap-3">
+                <div class="product p-3 mb-4 rounded   col-lg-3">
+                  <div class="product_img rounded my-4">
+                    <img src="../assets/waterProducts.png" alt="water bottle" />
+                  </div>
+                  <h6>Iron Removal filter</h6>
+                  <p class="para">
+                    Our Particle Filters can rapidly purify drinking
+                  </p>
+                  <div class="d-flex gap-3 justify-content-between">
+                    <div>
+                      <span class="">Starting From</span>
+                      <p class="price">₹ 8,000.00</p>
+                    </div>
+                    <a
+                      href="viewProduct.html"
+                      class="main_btn bg_primary_light text-white rounded"
+                    >
+                      View
+                    </a>
+                  </div>
+                </div>
+                <div class="product p-3 mb-4 rounded   col-lg-3">
+                  <div class="product_img rounded my-4">
+                    <img src="../assets/waterProducts.png" alt="water bottle" />
+                  </div>
+                  <h6>Iron Removal filter</h6>
+                  <p class="para">
+                    Our Particle Filters can rapidly purify drinking
+                  </p>
+                  <div class="d-flex gap-3 justify-content-between">
+                    <div>
+                      <span class="">Starting From</span>
+                      <p class="price">₹ 8,000.00</p>
+                    </div>
+                    <a
+                      href="viewProduct.html"
+                      class="main_btn bg_primary_light text-white rounded"
+                    >
+                      View
+                    </a>
+                  </div>
+                </div>
+                <div class="product p-3 mb-4 rounded   col-lg-3">
+                  <div class="product_img rounded my-4">
+                    <img src="../assets/waterProducts.png" alt="water bottle" />
+                  </div>
+                  <h6>Iron Removal filter</h6>
+                  <p class="para">
+                    Our Particle Filters can rapidly purify drinking
+                  </p>
+                  <div class="d-flex gap-3 justify-content-between">
+                    <div>
+                      <span class="">Starting From</span>
+                      <p class="price">₹ 8,000.00</p>
+                    </div>
+                    <a
+                      href="viewProduct.html"
+                      class="main_btn bg_primary_light text-white rounded"
+                    >
+                      View
+                    </a>
+                  </div>
+                </div>
+                <div class="product p-3 mb-4 rounded   col-lg-3">
+                  <div class="product_img rounded my-4">
+                    <img src="../assets/waterProducts.png" alt="water bottle" />
+                  </div>
+                  <h6>Iron Removal filter</h6>
+                  <p class="para">
+                    Our Particle Filters can rapidly purify drinking
+                  </p>
+                  <div class="d-flex gap-3 justify-content-between">
+                    <div>
+                      <span class="">Starting From</span>
+                      <p class="price">₹ 8,000.00</p>
+                    </div>
+                    <a
+                      href="viewProduct.html"
+                      class="main_btn bg_primary_light text-white rounded"
+                    >
+                      View
+                    </a>
+                  </div>
+                </div>
+                <div class="product p-3 mb-4 rounded   col-lg-3">
+                  <div class="product_img rounded my-4">
+                    <img src="../assets/waterProducts.png" alt="water bottle" />
+                  </div>
+                  <h6>Iron Removal filter</h6>
+                  <p class="para">
+                    Our Particle Filters can rapidly purify drinking
+                  </p>
+                  <div class="d-flex gap-3 justify-content-between">
+                    <div>
+                      <span class="">Starting From</span>
+                      <p class="price">₹ 8,000.00</p>
+                    </div>
+                    <a
+                      href="viewProduct.html"
+                      class="main_btn bg_primary_light text-white rounded"
+                    >
+                      View
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Related Products End -->
+          <!-- Products End -->
         </div>
       </section>
       <!-- Show Products -->
 
+      <!-- Clean water as service -->
+      <!-- Pricing Sec -->
+      <!-- pricing -->
       <section
-        class="still_Q d-md-flex align-items-center justify-content-between p-4 rounded mt-4"
+        class="pricing_sec tab-pane fade  show_products_sec"
+        id="clean_service_sec"
+        role="tabpanel"
+        aria-labelledby="clean_water_service"
+        tabindex="0"
       >
-        <div>
-          <h4 class="head_four text-white">Still have questions?</h4>
-          <p class="para text-white">
-            Can’t find the answer you’re looking for? Please chat to our
-            friendly team.
-          </p>
+        <div class="pricing d-flex ">
+          <div class="pricing_sec_wrapper d-flex ">
+            <div
+              role="tablist"
+              class="nav nav-pills btn_group d-flex gap-4 justify-content-center align-self-center flex-wrap mb-2"
+            >
+              <button
+                id="pricing_product_one-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_one"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_one"
+                aria-selected="true"
+                class="nav-link active d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+              <button
+                id="pricing_product_two-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_two"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_two"
+                aria-selected="false"
+                class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+              <button
+                id="pricing_product_three-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pricing_product_three"
+                type="button"
+                role="tab"
+                aria-controls="pricing_product_three"
+                aria-selected="false"
+                class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+              >
+                <h5>drinking water</h5>
+                <span class="d-flex">
+                  <p class="m-0">Starting at</p>
+                  &nbsp;
+                  <span class="price">$1 per liter</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- Pricing Product -->
+          <div class="pricing_product">
+            <!-- Product one -->
+            <div
+              id="pricing_product_one"
+              role="tabpanel"
+              aria-labelledby="pricing_product_one-tab"
+              tabindex="0"
+              class="tab-pane fade show active product_wrapper d-lg-flex justify-content-center"
+            >
+              <div class="pricing_product bg-white">
+                <div class="d-md-flex justify-content-between">
+                  <div class="pricing_content_head">
+                    <h4 class="head_fourth">Drinking water</h4>
+                    <p class="para">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quis suscipit earum ullam nesciunt laudantium, rem iure
+                      maiores totam quas odit fuga repellat eligendi corporis
+                      aut! Doloribus.
+                    </p>
+                  </div>
+                  <div class="text-end-lg">
+                    <h5>Starting at just</h5>
+                    <p class="price">$1 per liter</p>
+                  </div>
+                </div>
+                <div class="">
+                  <h4 class="head_fourth">Available model</h4>
+                  <ul>
+                    <li class="para">Single outlet</li>
+                    <li class="para">Multi outlet</li>
+                    <li class="para">Centralized</li>
+                  </ul>
+                  <div
+                    class="buttons_grp d-sm-flex justify-content-between gap-2 "
+                  >
+                    <button class="para text-white mb-2 product_btns">
+                      Book a visit
+                    </button>
+                    <a
+                      href="/dist/pages/talk_to_sales.html"
+                      class="para bg-white mb-2 product_btns"
+                    >
+                      Talk to sales
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product one End-->
+
+            <!-- Product two -->
+            <div
+              id="pricing_product_two"
+              role="tabpanel"
+              aria-labelledby="pricing_product_two-tab"
+              tabindex="0"
+              class="tab-pane fade product_wrapper d-lg-flex justify-content-center"
+            >
+              <div class="pricing_product bg-white">
+                <div class="d-md-flex justify-content-between">
+                  <div class="pricing_content_head">
+                    <h4 class="head_fourth">Drinking water</h4>
+                    <p class="para">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quis suscipit earum ullam nesciunt laudantium, rem iure
+                      maiores totam quas odit fuga repellat eligendi corporis
+                      aut! Doloribus.
+                    </p>
+                  </div>
+                  <div class="text-end-lg">
+                    <h5>Starting at just</h5>
+                    <p class="price">$1 per liter</p>
+                  </div>
+                </div>
+                <div class="">
+                  <h4 class="head_fourth">Available model</h4>
+                  <ul>
+                    <li class="para">Single outlet</li>
+                    <li class="para">Multi outlet</li>
+                    <li class="para">Centralized</li>
+                  </ul>
+                  <div
+                    class="buttons_grp d-sm-flex justify-content-between gap-2"
+                  >
+                    <button class="para text-white mb-2 product_btns">
+                      Book a visit
+                    </button>
+                    <a
+                      href="/dist/pages/talk_to_sales.html"
+                      class="para bg-white mb-2 product_btns"
+                    >
+                      Talk to sales
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product two end -->
+
+            <!-- Product three -->
+            <div
+              id="pricing_product_three"
+              role="tabpanel"
+              aria-labelledby="pricing_product_three-tab"
+              tabindex="0"
+              class=" tab-pane fade  product_wrapper d-lg-flex justify-content-center "
+            >
+              <div class="pricing_product bg-white">
+                <div class="d-md-flex justify-content-between">
+                  <div class="pricing_content_head">
+                    <h4 class="head_fourth">Drinking water</h4>
+                    <p class="para">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quis suscipit earum ullam nesciunt laudantium, rem iure
+                      maiores totam quas odit fuga repellat eligendi corporis
+                      aut! Doloribus.
+                    </p>
+                  </div>
+                  <div class="text-end-lg">
+                    <h5>Starting at just</h5>
+                    <p class="price">$1 per liter</p>
+                  </div>
+                </div>
+                <div class="">
+                  <h4 class="head_fourth">Available model</h4>
+                  <ul>
+                    <li class="para">Single outlet</li>
+                    <li class="para">Multi outlet</li>
+                    <li class="para">Centralized</li>
+                  </ul>
+                  <div
+                    class="buttons_grp d-sm-flex justify-content-between gap-2"
+                  >
+                    <button class="para text-white mb-2 product_btns">
+                      Book a visit
+                    </button>
+                    <a
+                      href="/dist/pages/talk_to_sales.html"
+                      class="para bg-white mb-2 product_btns"
+                    >
+                      Talk to sales
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product three end -->
+          </div>
+
+          <!-- Pricing Product End-->
         </div>
-        <button class="main_btn bg-white rounded">Get In Touch</button>
+      </section>
+      <!-- pricing End -->
+      <!-- pricing sec End -->
+      <!-- Clean water as service End -->
+      <section class="still_Q_sec">
+        <div
+          class="still_Q d-md-flex align-items-center justify-content-between p-5 rounded mt-4"
+        >
+          <div>
+            <h4 class="head_four text-white">Need a customized solution?</h4>
+            <p class="para text-white">
+              We will be more than happy to help you.
+            </p>
+          </div>
+          <button class="main_btn bg-white rounded">Get In Touch</button>
+        </div>
       </section>
     </main>
 

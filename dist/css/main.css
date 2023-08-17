@@ -29,7 +29,7 @@ a {
 }
 
 .head_second {
-  font-size: clamp(25px, 5vw, 48px);
+  font-size: clamp(25px, 4vw, 48px);
   font-weight: 800;
   line-height: 1.4; /* 133.333% */
 }
@@ -66,6 +66,10 @@ a {
   font-size: 16px;
 }
 
+.price_big {
+  font-size: clamp(22px, 3vw, 32px) !important;
+}
+
 .text_primary_color {
   color: #0083cb !important;
 }
@@ -82,6 +86,10 @@ a {
   color: #545454 !important;
 }
 
+.text_red {
+  color: #f00;
+}
+
 .ch65 {
   max-width: 65ch;
 }
@@ -96,6 +104,14 @@ a {
 
 .bg_primary_light {
   background-color: #005f89 !important;
+}
+
+.bg_primary_light_light {
+  background-color: #0093b7 !important;
+}
+
+.text_uppercase {
+  text-transform: uppercase !important;
 }
 
 .main_btn {
@@ -127,20 +143,24 @@ a {
   margin-inline: auto;
 }
 
+.line_through {
+  text-decoration: line-through;
+}
+
 .hide {
   display: none !important;
 }
 
 @media (max-width: 425px) {
+  .header_sec .sub_head {
+    gap: 0 !important;
+  }
   .key_filter_wrapper {
     justify-content: center !important;
   }
-  .key_filter_wrapper label .checkbox_box {
-    padding: 8px 22px !important;
-    font-size: 10px !important;
-  }
-  .key_filter_wrapper label input[type=checkbox] {
-    left: -2% !important;
+  .key_filter_wrapper button {
+    font-size: 10px;
+    padding: 8px !important;
   }
   .search_products {
     gap: unset !important;
@@ -150,6 +170,15 @@ a {
     background-color: #f6f9fa;
     border: none !important;
     width: 100% !important;
+  }
+  .product_details_image {
+    display: none;
+  }
+  .product_detail .product_carousel {
+    display: block !important;
+  }
+  .product_detail .product_carousel .item img {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -179,6 +208,9 @@ a {
   }
   .pricing_content_head {
     width: 100% !important;
+  }
+  .show_products_sec .show_products_wrapper .related_products_sec .related_products {
+    justify-content: center !important;
   }
 }
 @media (max-width: 990px) {
@@ -248,7 +280,7 @@ a {
   padding: 16px 0;
 }
 .header_sec .sub_head p a {
-  font-size: clamp(12px, 2.5vw, 18px);
+  font-size: clamp(11px, 2.5vw, 18px);
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
@@ -489,39 +521,30 @@ footer {
 }
 .main .key_filter .key_filter_wrapper {
   width: 95%;
-  max-width: 430px;
+  max-width: 500px;
   justify-content: space-around;
   background-color: white;
   border: 1px solid #b0b0b0;
   margin: 4rem 5%;
+  padding: 5px 0;
   display: block;
   margin-inline: auto;
 }
-.main .key_filter .key_filter_wrapper label {
-  padding: 4px;
-  min-width: 150px;
-  position: relative;
+.main .key_filter .key_filter_wrapper button {
+  padding: 8px 32px;
 }
-.main .key_filter .key_filter_wrapper label input[type=checkbox] {
-  position: absolute;
-  top: 50%;
-  left: 2%;
-  transform: translate(100%, -50%);
-}
-.main .key_filter .key_filter_wrapper label input:checked {
-  border-radius: 50%;
-}
-.main .key_filter .key_filter_wrapper label input:checked ~ .checkbox_box {
+.main .key_filter .key_filter_wrapper button.active, .main .key_filter .key_filter_wrapper button:hover {
+  cursor: pointer !important;
   background-color: #005f89;
   color: white;
 }
-.main .key_filter .key_filter_wrapper label .checkbox_box {
-  padding: 8px 34px;
-  font-size: 14px;
-  font-weight: 600;
+.main .key_filter .key_filter_wrapper button input,
+.main .key_filter .key_filter_wrapper button label {
+  cursor: pointer;
 }
 .main .show_products_sec {
   margin: 4rem 5%;
+  display: none;
 }
 .main .show_products_sec .show_products_wrapper .search_products input {
   min-width: 185px;
@@ -558,8 +581,136 @@ footer {
   border: 1px solid #005f89;
   color: #005f89 !important;
 }
-.main .still_Q {
+.main .show_products_sec .show_products_wrapper .related_products_sec .related_products .product {
+  max-width: 285px !important;
+}
+.main .show_products_sec.active {
+  display: block;
+}
+.main #clean_service_sec .pricing .pricing_sec_wrapper {
+  background-image: linear-gradient(136deg, #006944 0%, #0065b0 100%);
+  margin: 0 !important;
+  max-width: 350px;
+}
+.main #clean_service_sec .pricing .pricing_sec_wrapper .btn_group button {
+  border-radius: 8px !important;
+}
+.main #clean_service_sec .pricing .pricing_product .product_wrapper {
+  padding: 0 !important;
+}
+.main .still_Q_sec .still_Q {
   margin: 4rem 5%;
+  background-color: #63cdd7 !important;
+}
+.main .still_Q_sec .still_Q div h4,
+.main .still_Q_sec .still_Q div p {
+  font-size: clamp(18px, 3vw, 32px);
+}
+.main .still_Q_sec .still_Q button {
+  color: #63cdd7 !important;
+}
+
+.product_details_sec {
+  margin: 4rem 5%;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_details_image .main_img img {
+  width: 100%;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_details_image .product_more_img_div .product_more_img img {
+  width: 100%;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_detail h3 {
+  color: #333333 !important;
+  font-weight: 500;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_detail .buttons_grp {
+  width: 50%;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_detail .product_notice {
+  width: 100%;
+}
+.product_details_sec .product_details_sec_wrapper .products_details .product_detail .product_carousel {
+  display: none;
+}
+
+.benefits_sec {
+  margin: 4rem 5%;
+  padding: 4rem 5%;
+}
+.benefits_sec h3 {
+  color: #333333;
+  font-weight: 600;
+}
+.benefits_sec .benefits_sec_wrapper .benefit {
+  max-width: 306px;
+}
+.benefits_sec .benefits_sec_wrapper .benefit .benefit_img {
+  width: 100%;
+}
+.benefits_sec .benefits_sec_wrapper .benefit .benefit_img img {
+  border-radius: 4px;
+  width: 100%;
+}
+.benefits_sec .benefits_sec_wrapper .benefit span {
+  font-weight: 500 !important;
+}
+
+.specification {
+  margin: 4rem 5%;
+}
+.specification h3 {
+  font-weight: 600;
+  color: #333333;
+}
+.specification .specification_wrapper .table {
+  background-color: white;
+  padding: 3rem 5%;
+  display: block;
+  margin-inline: auto;
+}
+.specification .specification_wrapper .table div {
+  font-size: 16px;
+  display: flex;
+}
+.specification .specification_wrapper .table div span {
+  width: 35%;
+  font-weight: 600;
+  color: #545454;
+}
+.specification .specification_wrapper .table div label {
+  color: #8a8a8a;
+}
+.specification .specification_wrapper .table .line {
+  width: 100%;
+}
+
+.payment small {
+  font-size: 16px;
+}
+.payment form .field {
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.payment form .field input {
+  width: 100%;
+  padding: 8px 8px 8px 24px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+.payment form .field div input[placeholder=CVV] {
+  width: 30%;
+}
+.payment .payment_button div small {
+  font-size: 12px;
+}
+.payment .payment_button button {
+  width: 60%;
+}
+.payment .payment_qr {
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .main .hero_sec {

@@ -15,37 +15,24 @@
   .key_filter {
     .key_filter_wrapper {
       width: 95%;
-      max-width: 430px;
+      max-width: 500px;
       justify-content: space-around;
       background-color: white;
       border: 1px solid #b0b0b0;
       margin: $margin_sec;
+      padding: 5px 0;
       @include blockCenter;
-
-      label {
-        padding: 4px;
-        // border: 1px solid red;
-        min-width: 150px;
-        position: relative;
-
-        input[type="checkbox"] {
-          position: absolute;
-          top: 50%;
-          left: 2%;
-          transform: translate(100%, -50%);
-        }
-        input:checked {
-          border-radius: 50%;
-        }
-
-        & input:checked ~ .checkbox_box {
+      button {
+        padding: 8px 32px;
+        &.active,
+        &:hover {
+          cursor: pointer !important;
           background-color: #005f89;
           color: white;
         }
-        .checkbox_box {
-          padding: 8px 34px;
-          font-size: 14px;
-          font-weight: 600;
+        input,
+        label {
+          cursor: pointer;
         }
       }
     }
@@ -56,6 +43,7 @@
 
   .show_products_sec {
     margin: $margin_sec;
+    display: none;
     .show_products_wrapper {
       // Search Products
       .search_products {
@@ -72,7 +60,6 @@
       // Products Fillter
       .product_filter {
         overflow: scroll;
-
         &::-webkit-scrollbar {
           width: unset !important;
         }
@@ -105,15 +92,64 @@
         }
       }
       // Products Fillter End
+
+      //  products page product -(relaetd product)
+      .related_products_sec {
+        .related_products {
+          .product {
+            max-width: 285px !important;
+          }
+        }
+      }
+
+      //  products page product -(relaetd product)  End
     }
   }
 
+  .show_products_sec.active {
+    display: block;
+  }
   // Show Products End
+
+  // Clean service sec
+  #clean_service_sec {
+    .pricing {
+      .pricing_sec_wrapper {
+        background-image: linear-gradient(136deg, #006944 0%, #0065b0 100%);
+        margin: 0 !important;
+        max-width: 350px;
+        .btn_group {
+          button {
+            border-radius: 8px !important;
+          }
+        }
+      }
+
+      .pricing_product {
+        .product_wrapper {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  // Clean service sec End
 
   // still q section
 
-  .still_Q {
-    margin: $margin_sec;
+  .still_Q_sec {
+    .still_Q {
+      margin: $margin_sec;
+      background-color: #63cdd7 !important;
+      div {
+        h4,
+        p {
+          font-size: clamp(18px, 3vw, 32px);
+        }
+      }
+      button {
+        color: #63cdd7 !important;
+      }
+    }
   }
   // still q section End
 }

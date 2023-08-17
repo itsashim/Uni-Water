@@ -1,16 +1,18 @@
 @include media-sm {
+  // header section
+  .header_sec {
+    .sub_head {
+      gap: 0 !important;
+    }
+  }
+  // header section end
+
   // Key filter section
   .key_filter_wrapper {
     justify-content: center !important;
-    label {
-      .checkbox_box {
-        padding: 8px 22px !important;
-        font-size: 10px !important;
-      }
-
-      & input[type="checkbox"] {
-        left: -2% !important;
-      }
+    button {
+      font-size: 10px;
+      padding: 8px !important;
     }
   }
   // Key filter section End
@@ -26,6 +28,26 @@
     }
   }
   // show Products section End
+
+  // viewProduct.html
+  // Product details image section
+  .product_details_image {
+    display: none;
+  }
+  // Product details image section End
+  // product details section
+  .product_detail {
+    .product_carousel {
+      display: block !important;
+      .item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // product details section End
+  // viewProduct.html
 }
 
 @include media-md {
@@ -70,6 +92,18 @@
     width: 100% !important;
   }
   // pricing section end
+
+  //  products page product -(relaetd product)
+  .show_products_sec {
+    .show_products_wrapper {
+      .related_products_sec {
+        .related_products {
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+  //  products page product -(relaetd product)  End
 }
 
 @include media-lg {

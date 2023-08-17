@@ -1,0 +1,101 @@
+// product details section
+.product_details_sec {
+  margin: $margin_sec;
+  .product_details_sec_wrapper {
+    .products_details {
+      .product_details_image {
+        .main_img {
+          img {
+            width: 100%;
+          }
+        }
+        .product_more_img_div {
+          .product_more_img {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .product_detail {
+        h3 {
+          color: #333333 !important;
+          font-weight: 500;
+        }
+
+        .buttons_grp {
+          width: 50%;
+        }
+
+        .product_notice {
+          width: 100%;
+        }
+
+        .product_carousel {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// product details section End
+
+// Benefits of particle filer
+.benefits_sec {
+  margin: $margin_sec;
+  padding: $margin_sec;
+  h3 {
+    color: #333333;
+    font-weight: 600;
+  }
+  .benefits_sec_wrapper {
+    .benefit {
+      max-width: 306px;
+      .benefit_img {
+        width: 100%;
+        img {
+          border-radius: 4px;
+          width: 100%;
+        }
+      }
+      span {
+        font-weight: 500 !important;
+      }
+    }
+  }
+}
+// Benefits of particle filer End
+
+// Specification Section
+.specification {
+  margin: $margin_sec;
+
+  h3 {
+    font-weight: 600;
+    color: #333333;
+  }
+  .specification_wrapper {
+    .table {
+      background-color: white;
+      padding: 3rem 5%;
+      @include blockCenter;
+      div {
+        font-size: 16px;
+        display: flex;
+        span {
+          width: 35%;
+          font-weight: 600;
+          color: $gray_color;
+        }
+        label {
+          color: #8a8a8a;
+        }
+      }
+      .line {
+        width: 100%;
+      }
+    }
+  }
+}
+// Specification Section End

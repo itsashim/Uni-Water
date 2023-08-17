@@ -6,16 +6,18 @@ $roboto_font: "Roboto", sans-serif;
 $white: #fff !important;
 $primary_color: #0083cb;
 $primary_light: #005f89;
+$primary_light_light: #0093b7;
 $main_background: #f5f9fa;
 $head_color: #006882;
 $green_color: #2a8400;
 $para_color: #586c72;
 $gray_color: #545454;
+$red_color: #f00;
 
 $nav_font: 14px;
 $para_font: clamp(12px, 2.5vw, 17px);
 $font_first: clamp(35px, 5vw, 72px);
-$font_second: clamp(25px, 5vw, 48px);
+$font_second: clamp(25px, 4vw, 48px);
 $font_third: clamp(28px, 2.5vw, 36px);
 $font_fourth: clamp(24px, 2.5vw, 30px);
 $font_fifth: clamp(20px, 2.5vw, 28px);
@@ -134,6 +136,10 @@ a {
   font-size: 16px;
 }
 
+.price_big {
+  font-size: clamp(22px, 3vw, 32px) !important;
+}
+
 .text_primary_color {
   color: $primary_color !important;
 }
@@ -148,6 +154,9 @@ a {
 
 .text_gray {
   color: $gray_color !important;
+}
+.text_red {
+  color: $red_color;
 }
 
 .ch65 {
@@ -164,6 +173,14 @@ a {
 
 .bg_primary_light {
   background-color: $primary_light !important;
+}
+
+.bg_primary_light_light {
+  background-color: $primary_light_light !important;
+}
+
+.text_uppercase {
+  text-transform: uppercase !important;
 }
 
 .main_btn {
@@ -193,6 +210,10 @@ a {
   width: 90%;
   background-color: #d3e4e9;
   @include blockCenter;
+}
+
+.line_through {
+  text-decoration: line-through;
 }
 
 .hide {
