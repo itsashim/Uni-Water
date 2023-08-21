@@ -13,6 +13,7 @@ $green_color: #2a8400;
 $para_color: #586c72;
 $gray_color: #545454;
 $red_color: #f00;
+$alert_bg_color: #effafb; //alert background color
 
 $nav_font: 14px;
 $para_font: clamp(12px, 2.5vw, 17px);
@@ -34,6 +35,13 @@ $margin_sec: 4rem 5%;
 @mixin blockCenter {
   display: block;
   margin-inline: auto;
+}
+@mixin inputStyle {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 // desktop to mobile

@@ -1,0 +1,129 @@
+// Every popup needs this same file
+
+.popup {
+  background-color: $alert_bg_color;
+  width: 65%;
+  padding: 2rem;
+  @include blockCenter;
+  small {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  ul {
+    li {
+      margin-right: 4%;
+      button {
+        border: none;
+        background: transparent;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #8a8a8a;
+        &.active {
+          color: $primary_light;
+          border-bottom: 3px solid $primary_light;
+        }
+      }
+    }
+    .close_btn {
+      img {
+        width: 2rem;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+  }
+
+  .tab-content {
+    .alert_ {
+      div {
+        input {
+          @include inputStyle;
+        }
+      }
+
+      .suggested_product {
+        .suggested_product_ {
+          input {
+            display: none;
+          }
+          & input:checked ~ .product_label {
+            background-color: #c3f2f3;
+            .checked_icon {
+              display: block;
+            }
+          }
+          .checked_icon {
+            display: none;
+          }
+
+          .product_label {
+            border-radius: 8px;
+            padding: 8px 8px 1.5rem 8px;
+            background-color: transparent;
+            max-width: 130px;
+
+            div {
+              // This is image of product label
+              width: 100%;
+              height: 120px;
+              position: relative;
+
+              img {
+                width: 100%;
+              }
+              .checked_icon {
+                position: absolute;
+                width: 1rem;
+                top: 2%;
+                left: 2%;
+              }
+            }
+          }
+        }
+      }
+      .popup_footer {
+        p {
+          color: $primary_light;
+          border-bottom: 2px solid $primary_light;
+          cursor: pointer;
+        }
+      }
+
+      // cities
+      .cities {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .city {
+          color: #8a8a8a;
+          font-size: 16px;
+          padding: 0.5rem;
+
+          svg {
+            stroke: #8a8a8a;
+            &:hover,
+            &:active {
+              stroke: $primary_color;
+              cursor: pointer;
+            }
+          }
+        }
+        .city_text {
+          margin-bottom: 0;
+          width: 18% !important;
+        }
+      }
+      .view_all {
+        border: none;
+        background-color: transparent;
+        color: $head_color;
+        @include blockCenter;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

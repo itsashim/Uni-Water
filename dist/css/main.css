@@ -487,6 +487,8 @@ footer {
   width: 100%;
   padding: 8px;
   border: 1px solid #e6e6e6;
+  background-color: transparent;
+  border-radius: 4px;
 }
 .form_sec .layout_2 .form_details form .detail::-moz-placeholder {
   color: #8a8a8a;
@@ -694,8 +696,9 @@ footer {
 }
 .payment form .field input {
   width: 100%;
-  padding: 8px 8px 8px 24px;
+  padding: 8px;
   border: 1px solid #e6e6e6;
+  background-color: transparent;
   border-radius: 4px;
 }
 .payment form .field div input[placeholder=CVV] {
@@ -711,6 +714,114 @@ footer {
   border: 1px solid #e6e6e6;
   padding: 1rem;
   border-radius: 8px;
+}
+
+.popup {
+  background-color: #effafb;
+  width: 65%;
+  padding: 2rem;
+  display: block;
+  margin-inline: auto;
+}
+.popup small {
+  font-size: 16px;
+  font-weight: 500;
+}
+.popup ul li {
+  margin-right: 4%;
+}
+.popup ul li button {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+.popup ul li button.active {
+  color: #005f89;
+  border-bottom: 3px solid #005f89;
+}
+.popup ul .close_btn img {
+  width: 2rem;
+}
+.popup .line {
+  width: 100%;
+}
+.popup .tab-content .alert_ div input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+  background-color: transparent;
+  border-radius: 4px;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ input {
+  display: none;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ input:checked ~ .product_label {
+  background-color: #c3f2f3;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ input:checked ~ .product_label .checked_icon {
+  display: block;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ .checked_icon {
+  display: none;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ .product_label {
+  border-radius: 8px;
+  padding: 8px 8px 1.5rem 8px;
+  background-color: transparent;
+  max-width: 130px;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ .product_label div {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ .product_label div img {
+  width: 100%;
+}
+.popup .tab-content .alert_ .suggested_product .suggested_product_ .product_label div .checked_icon {
+  position: absolute;
+  width: 1rem;
+  top: 2%;
+  left: 2%;
+}
+.popup .tab-content .alert_ .popup_footer p {
+  color: #005f89;
+  border-bottom: 2px solid #005f89;
+  cursor: pointer;
+}
+.popup .tab-content .alert_ .cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.popup .tab-content .alert_ .cities .city {
+  color: #8a8a8a;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+.popup .tab-content .alert_ .cities .city svg {
+  stroke: #8a8a8a;
+}
+.popup .tab-content .alert_ .cities .city svg:hover, .popup .tab-content .alert_ .cities .city svg:active {
+  stroke: #0083cb;
+  cursor: pointer;
+}
+.popup .tab-content .alert_ .cities .city_text {
+  margin-bottom: 0;
+  width: 18% !important;
+}
+.popup .tab-content .alert_ .view_all {
+  border: none;
+  background-color: transparent;
+  color: #006882;
+  display: block;
+  margin-inline: auto;
+}
+.popup .tab-content .alert_ .view_all:hover {
+  color: black;
 }
 
 .main .hero_sec {

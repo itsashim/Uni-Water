@@ -47,5 +47,15 @@ $(document).ready(function () {
     }
   });
 
+  var showMore = $(".view_all").html("View all Cities");
+
+  $(".view_all").on("click", function () {
+    $(".citys").toggleClass("hide");
+    $(".cityss").toggleClass("hide");
+    $(this).html(
+      $(this).html() == "Show Less" ? "View all Cities" : "Show Less"
+    );
+  });
+
   // Product.html
 });

@@ -58,5 +58,12 @@ _headerFooter.scss: This file includes all the styles of header and footer
 
 _main.scss: All the styles of index.html
 
+
+#pupup 
+popup.scss :- Popup styles are in separate file . All the styles of popups are in here..
+
+------------------------------------------------------
+
 #Assets 
 This Folder consists Website images
+
