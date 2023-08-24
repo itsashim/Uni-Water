@@ -10,7 +10,8 @@
 @import "pages/viewProduct";
 @import "pages/book_a_visit";
 @import "pages/popup";
-
+@import "pages/your_cart";
+@import "pages/shipping_info";
 // main section
 .main {
   // Hero Section
@@ -153,7 +154,7 @@
 
     .pricing_sec_wrapper {
       margin: $margin_sec;
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: 1px solid $border_color;
       // padding-bottom: 1rem;
       // margin-bottom: 1rem;
       width: 90%;

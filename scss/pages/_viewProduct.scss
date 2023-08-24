@@ -2,41 +2,6 @@
 .product_details_sec {
   margin: $margin_sec;
   .product_details_sec_wrapper {
-    .products_details {
-      .product_details_image {
-        .main_img {
-          img {
-            width: 100%;
-          }
-        }
-        .product_more_img_div {
-          .product_more_img {
-            img {
-              width: 100%;
-            }
-          }
-        }
-      }
-
-      .product_detail {
-        h3 {
-          color: #333333 !important;
-          font-weight: 500;
-        }
-
-        .buttons_grp {
-          width: 50%;
-        }
-
-        .product_notice {
-          width: 100%;
-        }
-
-        .product_carousel {
-          display: none;
-        }
-      }
-    }
   }
 }
 // product details section End

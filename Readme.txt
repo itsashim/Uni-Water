@@ -50,7 +50,7 @@ Edit directly in SCSS file
 
 _directChanges: This file includes all the classes of Bootstrap that are directly altered 
 
-_config.scss : This file includes all the utility class, reused class , varaibles, mixins , keyframes e.t.c all the reusables are here.
+_config.scss : This file includes all the utility class, reused class , varaibles, mixins , keyframes e.t.c all the reusables are here. And the Repeated section which is  used  more than twice...... 
 
 _responsive.scss: This file includes all the media queries 
 

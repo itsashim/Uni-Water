@@ -57,5 +57,26 @@ $(document).ready(function () {
     );
   });
 
-  // Product.html
+  // Product.html End
+
+  // your_cart.html || your_cart.scss)(product_increaser)
+  const productValueArr = [];
+  let productValue = 0;
+  $(".product_value").html(productValueArr.length);
+  $("#product_increaser").on("click", function () {
+    productValue++;
+    productValueArr.push(productValue);
+    console.log(productValueArr);
+    $(".product_value").html(productValueArr.length);
+  });
+  $("#product_decreaser").on("click", function () {
+    productValue--;
+    productValueArr.pop();
+    console.log(productValueArr);
+    $(".product_value").html(productValueArr.length);
+  });
+
+  console.log(productValueArr);
+
+  // your_cart.html || your_cart.scss)(product_increaser) End
 });

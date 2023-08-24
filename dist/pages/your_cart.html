@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- line awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Google Fonts Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl carousel cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Owl carousel cdn end-->
+  </head>
+  <body>
+    <!-- header Section -->
+    <header class="header_sec">
+      <div class="sub_head">
+        <p><a class="sub_head_a_dash" href="#">residental solutions</a></p>
+        <p>
+          <a class="sub_head_a" href="#">industrail and commercial solutions</a>
+        </p>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="../assets/Weblogo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item nav_item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item nav_item">
+                <a class="nav-link" aria-current="page" href="product.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item nav_item">
+                <a class="nav-link" aria-current="page" href="#">Blog</a>
+              </li>
+            </ul>
+            <div class="nav_buttons">
+              <figure class="m-0"><i class="lar la-user"></i></figure>
+              <figure class="m-0"><i class="las la-shopping-cart"></i></figure>
+              <button class="main_btn rounded">
+                <i class="las la-phone"></i> Contact
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header Section end-->
+    <!-- Bread Crumb -->
+    <section class="bread_crumb_sec mx-auto px-3 py-3 my-3 ">
+      <a href="../index.html" class="para text_primary_color">Home</a>
+      &nbsp;
+      <i class="las la-greater-than"></i>
+      &nbsp;
+      <a href="product.html" class="para">All Products</a>
+      <i class="las la-greater-than"></i>
+      &nbsp;
+      <span class="para">Particle Filter</span>
+    </section>
+    <!-- Bread Crumb End -->
+    <!-- Timeline -->
+    <section class="timeline_sec">
+      <div
+        class="timeline_sec_wrapper d-flex align-items-center justify-content-between"
+      >
+        <div class="d-flex flex-column align-items-center">
+          <svg
+            class="active mb-2"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="svgexport-16 (23) 1" clip-path="url(#clip0_1435_15472)">
+              <g id="Group">
+                <path
+                  id="Vector"
+                  d="M1 1C0.734784 1 0.48043 1.10536 0.292893 1.29289C0.105357 1.48043 0 1.73478 0 2C0 2.26522 0.105357 2.51957 0.292893 2.70711C0.48043 2.89464 0.734784 3 1 3H2.78C2.92536 3.00025 3.06696 3.04614 3.18484 3.13118C3.30272 3.21623 3.39092 3.33614 3.437 3.474L6.734 13.367C6.881 13.807 6.899 14.279 6.787 14.729L6.516 15.816C6.117 17.41 7.358 19 9 19H21C21.2652 19 21.5196 18.8946 21.7071 18.7071C21.8946 18.5196 22 18.2652 22 18C22 17.7348 21.8946 17.4804 21.7071 17.2929C21.5196 17.1054 21.2652 17 21 17H9C8.61 17 8.36 16.68 8.455 16.303L8.66 15.485C8.69454 15.3466 8.7743 15.2238 8.88662 15.1359C8.99894 15.048 9.13739 15.0002 9.28 15H20C20.2101 15.0003 20.415 14.9343 20.5855 14.8115C20.7561 14.6888 20.8836 14.5154 20.95 14.316L23.615 6.316C23.6651 6.16567 23.6787 6.00559 23.6548 5.84895C23.6308 5.69232 23.57 5.54362 23.4773 5.41509C23.3847 5.28657 23.2628 5.18192 23.1217 5.10975C22.9806 5.03758 22.8245 4.99996 22.666 5H6.555C6.40947 4.99996 6.26764 4.95417 6.14956 4.86911C6.03148 4.78405 5.94313 4.66402 5.897 4.526L4.949 1.684C4.88265 1.48479 4.75528 1.31153 4.58495 1.18876C4.41462 1.06599 4.20996 0.999949 4 1H1ZM8 20C7.46957 20 6.96086 20.2107 6.58579 20.5858C6.21071 20.9609 6 21.4696 6 22C6 22.5304 6.21071 23.0391 6.58579 23.4142C6.96086 23.7893 7.46957 24 8 24C8.53043 24 9.03914 23.7893 9.41421 23.4142C9.78929 23.0391 10 22.5304 10 22C10 21.4696 9.78929 20.9609 9.41421 20.5858C9.03914 20.2107 8.53043 20 8 20ZM20 20C19.4696 20 18.9609 20.2107 18.5858 20.5858C18.2107 20.9609 18 21.4696 18 22C18 22.5304 18.2107 23.0391 18.5858 23.4142C18.9609 23.7893 19.4696 24 20 24C20.5304 24 21.0391 23.7893 21.4142 23.4142C21.7893 23.0391 22 22.5304 22 22C22 21.4696 21.7893 20.9609 21.4142 20.5858C21.0391 20.2107 20.5304 20 20 20Z"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1435_15472">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>Your cart</p>
+        </div>
+        <p>-----------------------</p>
+        <div class="d-flex flex-column align-items-center">
+          <svg
+            class="mb-2"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="svgexport-16 (24) 1" clip-path="url(#clip0_1435_15478)">
+              <g id="Group">
+                <path
+                  id="Vector"
+                  d="M24.0972 10.9252L20.4598 7.28788V3.08616C20.4598 2.32644 19.8442 1.71074 19.0833 1.71074C18.3242 1.71074 17.7086 2.32644 17.7086 3.08616V4.53668L15.0003 1.82832C13.6613 0.490046 11.3333 0.49242 9.99731 1.83074L0.902658 10.9252C0.365781 11.4631 0.365781 12.3336 0.902658 12.8707C1.43978 13.4085 2.3119 13.4085 2.84883 12.8707L11.9426 3.77599C12.2389 3.48129 12.761 3.48129 13.0557 3.77511L22.151 12.8707C22.2787 12.9985 22.4304 13.0999 22.5973 13.169C22.7643 13.2381 22.9432 13.2736 23.1239 13.2734C23.4761 13.2734 23.8283 13.1395 24.0972 12.8707C24.6343 12.3336 24.6343 11.4632 24.0972 10.9252Z"
+                />
+                <path
+                  id="Vector_2"
+                  d="M12.9773 6.3869C12.7131 6.12282 12.2852 6.12282 12.0218 6.3869L4.02212 14.3842C3.89536 14.5112 3.82419 14.6833 3.82422 14.8627V20.6956C3.82422 22.0644 4.93402 23.1741 6.30271 23.1741H10.2634V17.0404H14.7349V23.1741H18.6956C20.0642 23.1741 21.174 22.0644 21.174 20.6957V14.8627C21.174 14.6828 21.103 14.5105 20.9761 14.3842L12.9773 6.3869Z"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1435_15478">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>Your cart</p>
+        </div>
+        <p>-----------------------</p>
+
+        <div class="d-flex flex-column align-items-center">
+          <svg
+            class="mb-2"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="svgexport-16 (25) 1" clip-path="url(#clip0_1435_15485)">
+              <g id="Group">
+                <path
+                  id="Vector"
+                  d="M22.3633 19.6364H18.5452C16.1391 19.6364 14.1816 17.6789 14.1816 15.2728C14.1816 12.8668 16.1391 10.9093 18.5452 10.9093H22.3633C22.4349 10.9093 22.5059 10.8953 22.5721 10.8679C22.6383 10.8405 22.6985 10.8003 22.7491 10.7496C22.7998 10.699 22.8399 10.6388 22.8673 10.5726C22.8947 10.5064 22.9088 10.4355 22.9088 10.3638V8.7275C22.9088 7.5837 22.0216 6.6535 20.9006 6.56329L17.7681 1.09179C17.4778 0.585754 17.009 0.224073 16.4481 0.0738875C15.8899 -0.0752748 15.3061 0.00306481 14.8064 0.293873L4.06783 6.5457H2.1818C0.978529 6.5457 0 7.52418 0 8.7275V21.8182C0 23.0215 0.978478 24 2.1818 24H20.727C21.9302 24 22.9088 23.0215 22.9088 21.8182V20.1819C22.9088 20.1102 22.8947 20.0393 22.8673 19.9731C22.8399 19.9069 22.7998 19.8467 22.7491 19.7961C22.6985 19.7454 22.6383 19.7052 22.5721 19.6778C22.5059 19.6504 22.4349 19.6363 22.3633 19.6364ZM18.4445 4.4698L19.633 6.5457H14.8789L18.4445 4.4698ZM6.23598 6.5457L15.3556 1.23666C15.6022 1.0923 15.8904 1.05395 16.1658 1.12748C16.4444 1.20204 16.6766 1.38209 16.821 1.63403L16.8221 1.63603L8.38935 6.5457H6.23598Z"
+                />
+                <path
+                  id="Vector_2"
+                  d="M22.3623 12.0001H18.5442C16.7395 12.0001 15.2715 13.4681 15.2715 15.2728C15.2715 17.0775 16.7395 18.5455 18.5442 18.5455H22.3623C23.2646 18.5455 23.9986 17.8115 23.9986 16.9091V13.6365C23.9986 12.7341 23.2646 12.0001 22.3623 12.0001ZM18.5442 16.3637C17.9428 16.3637 17.4533 15.8742 17.4533 15.2728C17.4533 14.6714 17.9428 14.1819 18.5442 14.1819C19.1455 14.1819 19.635 14.6714 19.635 15.2728C19.6351 15.8742 19.1456 16.3637 18.5442 16.3637Z"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1435_15485">
+                <rect width="24" height="24" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Your cart</p>
+        </div>
+        <p>-----------------------</p>
+
+        <div class="d-flex flex-column align-items-center">
+          <svg
+            class="mb-2"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="svgexport-16 (26) 1" clip-path="url(#clip0_1435_15492)">
+              <g id="Group">
+                <path
+                  id="Vector"
+                  d="M24.3823 12.7953L22.9678 10.564L23.8068 8.0599C23.8622 7.89429 23.8586 7.71463 23.7966 7.55136C23.7347 7.3881 23.6182 7.25127 23.4669 7.16405L21.1779 5.84448L20.757 3.237C20.7287 3.0646 20.6418 2.90723 20.511 2.79138C20.3803 2.67553 20.2136 2.60828 20.039 2.60096L17.3989 2.49759L15.8149 0.383666C15.7102 0.243776 15.5603 0.144489 15.3907 0.102718C15.2211 0.0609466 15.0422 0.0792747 14.8846 0.15458L12.4997 1.28883L10.1138 0.153649C9.95595 0.0791552 9.77722 0.061358 9.60776 0.103256C9.4383 0.145155 9.28847 0.244187 9.1835 0.383666L7.59946 2.49759L4.95938 2.60096C4.78497 2.60793 4.61832 2.67496 4.48765 2.7907C4.35698 2.90643 4.27031 3.06377 4.24233 3.23606L3.8214 5.84354L1.53241 7.16312C1.38096 7.25019 1.26429 7.38696 1.20217 7.55024C1.14005 7.71352 1.13631 7.89325 1.19157 8.05897L2.03062 10.5631L0.616997 12.7953C0.523745 12.943 0.484397 13.1185 0.505608 13.2919C0.52682 13.4653 0.607289 13.6261 0.733402 13.747L2.63966 15.575L2.42547 18.2067C2.41122 18.3809 2.45757 18.5546 2.55667 18.6985C2.65577 18.8424 2.80154 18.9476 2.96932 18.9964L5.50695 19.7274L6.5397 22.1589C6.60751 22.3201 6.72918 22.4527 6.88393 22.534C7.03867 22.6154 7.21687 22.6405 7.38807 22.605L9.97692 22.0742L12.0201 23.7476C12.1588 23.8603 12.3292 23.919 12.4997 23.919C12.6701 23.919 12.8396 23.8603 12.9792 23.7476L15.0224 22.0742L17.6113 22.605C17.9623 22.6795 18.319 22.4904 18.4596 22.1589L19.4924 19.7274L22.03 18.9964C22.1979 18.9478 22.3437 18.8426 22.4429 18.6986C22.542 18.5547 22.5883 18.3809 22.5738 18.2067L22.3597 15.575L24.2659 13.747C24.392 13.6261 24.4725 13.4653 24.4937 13.2919C24.5149 13.1185 24.4756 12.943 24.3823 12.7953ZM17.9726 9.15318L12.6729 17.093C12.4727 17.3891 12.1625 17.5875 11.8543 17.5875C11.547 17.5875 11.2034 17.4152 10.9845 17.1954L7.09379 13.2423C6.96626 13.1115 6.89488 12.936 6.89488 12.7534C6.89488 12.5707 6.96626 12.3953 7.09379 12.2645L8.05391 11.2867C8.11682 11.2234 8.19162 11.1732 8.27401 11.1389C8.35639 11.1047 8.44474 11.087 8.53396 11.087C8.62319 11.087 8.71153 11.1047 8.79392 11.1389C8.8763 11.1732 8.9511 11.2234 9.01402 11.2867L11.5461 13.8588L15.7218 7.60266C15.7713 7.52806 15.8351 7.46406 15.9096 7.4144C15.9841 7.36474 16.0677 7.33041 16.1556 7.31342C16.2435 7.29643 16.3339 7.29712 16.4216 7.31544C16.5092 7.33376 16.5923 7.36935 16.666 7.42014L17.7919 8.194C18.102 8.40819 18.1821 8.83935 17.9726 9.15318Z"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1435_15492">
+                <rect width="24" height="24" transform="translate(0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p>Your cart</p>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline  End-->
+
+    <!-- cart section -->
+    <section class="cart_sec p-4">
+      <div class="cart_sec_wrapper row m-0">
+        <div class="cart_left col-lg-8">
+          <!-- Product details -->
+          <div
+            class="products_details align-items-center row m-0 bg-white rounded mb-3 p-2"
+          >
+            <div class="product_details_image col-md-3">
+              <div class="main_img ">
+                <img
+                  class="rounded"
+                  src="/dist/assets/products/product2.png"
+                  alt="Product one image"
+                />
+              </div>
+            </div>
+
+            <div class="product_detail col-md-8 d-flex flex-column ps-sm-5">
+              <div>
+                <span class="text_uppercase text_gray">Whole House filter</span>
+                <h3 class="head_second mb-0">Whole House Filter 1000 LPH</h3>
+              </div>
+              <div class="mt-1 ">
+                <img src="/dist/assets/greenPercent.svg" alt="Green Percent" />
+                <span class="text_green me-2">20%</span>
+                <span class="text_gray line_through me-2">$12000.00</span>
+                <span class="price price_big">$20000.00</span>
+              </div>
+              <div class="product_increaser mt-3 d-flex rounded">
+                <button id="product_decreaser">-</button>
+                <p class="m-0 product_value"></p>
+                <button id="product_increaser">+</button>
+              </div>
+              <div class="close">
+                <img
+                  src="/dist/assets/close-circle-outline.svg"
+                  alt="close button"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Product details End-->
+
+          <div class="notice rounded d-flex gap-4 p-4 ">
+            <div><img src="/dist/assets/30daysFrame.svg" alt="frame" /></div>
+            <div>
+              <h6 class="mb-2">30 days money back guarantee</h6>
+              <p class="para">
+                At Uniwater, our sole focus is providing best-in-class water
+                filtration products so every home can enjoy healthy,
+                great-tasting water. We're so confident you will love your
+                Uniwater filter that we offer a 90-day, no-questions asked,
+                trial period.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cart_right bg-white col-lg-4 mt-4-md  rounded p-3">
+          <div class="cart_right_wrapper">
+            <div class="d-flex gap-4 mb-3">
+              <input type="text" class="rounded" placeholder="Promo code" />
+              <button class="apply main_btn bg-white rounded">Apply</button>
+            </div>
+            <div class="line"></div>
+            <div class="bill mt-3">
+              <p>
+                <label for="subtotal">Sub Total</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+              <p>
+                <label for="subtotal">Shipping Cost</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+              <p>
+                <label for="subtotal">GST (@18 %)</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+            </div>
+            <div class="line"></div>
+            <div class="bill my-5">
+              <p>
+                <label for="subtotal">Total Amount</label>
+                <span id="subtotal" class="text_primary_color">$1900.00</span>
+              </p>
+            </div>
+            <a
+              class="main_btn bg_primary_light text-white rounded justify-content-center"
+            >
+              Proceed to Pay
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart section End-->
+
+    <!-- Footer  -->
+    <footer>
+      <div class="footer_sec">
+        <div class="footer_sec_wrapper row justify-content-between">
+          <div class="footer_left col-lg-4 mb-5 col-md-12">
+            <div class="footer_logo mb-4">
+              <img src="../assets/Weblogo.png" alt="Website logo " />
+            </div>
+            <p class="para text-white">
+              An end to - end water quality management company tackling water
+              problems faced by residents and business
+            </p>
+            <p class="para text-white">Request a callback</p>
+            <form>
+              <input
+                class="text-white"
+                type="text"
+                placeholder="Mobile Number"
+              />
+              <button class="btn bg-white para primary_color">Request</button>
+            </form>
+          </div>
+          <div class="footer_center col-lg-4 mb-5 d-flex gap-5 col-md-12">
+            <div class="">
+              <h3 class="head_third text-white mb-3">Quick Links</h3>
+              <ul class="p-0">
+                <li>
+                  <p class="para text-white">Home</p>
+                </li>
+                <li><p class="para text-white">Service</p></li>
+                <li><p class="para text-white">About us</p></li>
+                <li><p class="para text-white">Products</p></li>
+                <li><p class="para text-white">Contact us</p></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="head_third text-white mb-3">Products</h3>
+              <ul class="p-0">
+                <li>
+                  <p class="para text-white">Particle Filters</p>
+                </li>
+                <li><p class="para text-white">Iron Removal Filter</p></li>
+                <li><p class="para text-white">Water Softeners</p></li>
+                <li><p class="para text-white">Arsenic Filters</p></li>
+                <li><p class="para text-white">Drinking Water</p></li>
+                <li><p class="para text-white">Ro/DM Plants</p></li>
+                <li><p class="para text-white">Activated Carbon Filter</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_right mb-5 col-lg-3 col-md-12">
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="../assets/callIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Monday - Saturday (9Am - 7PM)</span>
+                <p class="para text-white">+91 96584 89658</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="../assets/messageIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Write to us</span>
+                <p class="para text-white">info@uinwater.com</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-4 ">
+              <div class="footer_icon">
+                <img src="../assets/networkIcon.svg" alt="Footer call icon" />
+              </div>
+              <div>
+                <span class="text-white">Social Networks</span>
+                <div>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f text-white me-2"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in text-white me-2"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram text-white me-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p class="para text-white">
+            Copyright © 2023 Uniwater Solutions | Powered by Uniwater Solutions
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <!-- Jquery Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery Cdn -->
+    <script src="/dist/script.js"></script>
+  </body>
+</html>

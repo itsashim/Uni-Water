@@ -8,14 +8,14 @@
   }
   form {
     .field {
-      border: 1px solid #e6e6e6;
+      border: 1px solid $border_color;
       padding: 1rem;
       border-radius: 4px;
 
       input {
         // width: 100%;
         // padding: 8px 8px 8px 24px;
-        // border: 1px solid #e6e6e6;
+        // border: 1px solid $border_color;
         // border-radius: 4px;
         @include inputStyle;
       }
@@ -38,7 +38,7 @@
     }
   }
   .payment_qr {
-    border: 1px solid #e6e6e6;
+    border: 1px solid $border_color;
     padding: 1rem;
     border-radius: 8px;
   }

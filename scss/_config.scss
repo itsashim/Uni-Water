@@ -14,6 +14,7 @@ $para_color: #586c72;
 $gray_color: #545454;
 $red_color: #f00;
 $alert_bg_color: #effafb; //alert background color
+$border_color: #e6e6e6;
 
 $nav_font: 14px;
 $para_font: clamp(12px, 2.5vw, 17px);
@@ -39,7 +40,7 @@ $margin_sec: 4rem 5%;
 @mixin inputStyle {
   width: 100%;
   padding: 8px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $border_color;
   background-color: transparent;
   border-radius: 4px;
 }
@@ -92,6 +93,7 @@ $margin_sec: 4rem 5%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  // border: 1px solid red;
 }
 
 // Utilities Classes
@@ -187,6 +189,10 @@ a {
   background-color: $primary_light_light !important;
 }
 
+.border_primary_color {
+  border: 1px solid $primary_color !important;
+}
+
 .text_uppercase {
   text-transform: uppercase !important;
 }
@@ -200,6 +206,7 @@ a {
   color: $primary_light;
   font-weight: 600;
   border: none;
+  cursor: pointer;
 }
 
 .product_btns {
@@ -227,3 +234,51 @@ a {
 .hide {
   display: none !important;
 }
+
+// Reusable SCSS(Section or compontents)
+
+// bread crumb section
+.bread_crumb_sec {
+  width: 90%;
+  background-color: #eeefff;
+}
+// bread crumb section
+
+// Product Details
+.products_details {
+  .product_details_image {
+    .main_img {
+      img {
+        width: 100%;
+      }
+    }
+    .product_more_img_div {
+      .product_more_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .product_detail {
+    h3 {
+      color: #333333 !important;
+      font-weight: 500;
+    }
+
+    .buttons_grp {
+      width: 50%;
+    }
+
+    .product_notice {
+      width: 100%;
+    }
+
+    .product_carousel {
+      display: none;
+    }
+  }
+}
+
+// Product Details End

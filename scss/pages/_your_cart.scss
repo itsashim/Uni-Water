@@ -1,0 +1,112 @@
+.timeline_sec {
+  @include flexCenter;
+  .timeline_sec_wrapper {
+    width: 50%;
+    div {
+      color: $gray_color;
+      svg {
+        // stroke: $gray_color !important;
+        fill: $gray_color;
+        &:hover {
+          cursor: pointer;
+          fill: $primary_light_light;
+          color: $primary_light_light;
+
+          & ~ p {
+            color: $primary_light_light;
+          }
+        }
+        &.active {
+          color: $primary_light_light;
+          fill: $primary_light_light;
+          & ~ p {
+            color: $primary_light_light;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Cart Section
+.cart_sec {
+  .cart_sec_wrapper {
+    // cart Left
+    .cart_left {
+      .product_increaser {
+        border: 1px solid $border_color;
+        width: 30%;
+        max-width: 140px;
+        justify-content: space-around;
+        padding: 0 14px;
+        align-items: center;
+        color: $primary_light;
+        button {
+          border: none;
+          background-color: transparent;
+          padding: 4px;
+        }
+      }
+      .products_details {
+        // border: 1px solid green;
+      }
+      .product_detail {
+        position: relative;
+        // border: 1px solid red;
+        .close {
+          position: absolute;
+          right: -10%;
+          top: 0%;
+        }
+        .head_second {
+          line-height: 1.2;
+          font-size: clamp(24px, 3vw, 28px);
+          font-weight: 600;
+        }
+      }
+      .notice {
+        background-color: #f3f0ff;
+        h6 {
+          color: $gray_color;
+          font-size: clamp(18px, 3vw, 22px);
+          font-weight: 700;
+        }
+      }
+    }
+    // cart Left End
+  }
+}
+
+// Cart Right (Bill Component)
+.cart_right_wrapper {
+  input {
+    @include inputStyle;
+    width: 60%;
+    &::placeholder {
+      color: $gray_color;
+    }
+  }
+  .apply.main_btn {
+    width: 30% !important;
+    border: 1px solid $primary_light_light;
+    font-size: 500;
+    justify-content: center;
+  }
+
+  .bill {
+    label {
+      width: 75%;
+    }
+  }
+  .line {
+    width: 100%;
+  }
+
+  .main_btn {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+// Cart Right End
+// Cart Section End
