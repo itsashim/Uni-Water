@@ -1,0 +1,20 @@
+.confirmation {
+  img {
+    @include blockCenter;
+  }
+}
+
+// Confirmend section
+.confirmed_sec {
+  margin: $margin_sec;
+  .confirmed_sec_wrapper {
+    .products_details {
+      max-width: 500px;
+    }
+    span {
+      color: $gray_color;
+      font-weight: 600;
+    }
+  }
+}
+// Confirmend sectionw End

@@ -1,3 +1,41 @@
 .add_new_address {
   border: 1px solid $primary_color;
 }
+
+//  Modal Form Adding Shipping Info
+.add_address {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 150%;
+  z-index: 999;
+  padding-top: 3rem;
+  background-image: url(/dist/assets/overlay.png);
+  .add_address_wrapper {
+    display: grid;
+    place-items: center;
+
+    form {
+      position: relative;
+      h5 {
+        color: $gray_color;
+      }
+      max-width: 450px;
+      padding: 25px;
+      input {
+        margin-bottom: 10px;
+        @include inputStyle;
+      }
+      .close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.show_address_form {
+  display: none;
+}
+//  Modal Form Adding Shipping Info  End

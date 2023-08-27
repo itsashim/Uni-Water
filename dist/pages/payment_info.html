@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Cart</title>
+    <title>Payment Info</title>
     <link rel="stylesheet" href="../css/main.css" />
     <!-- Bootstrap link -->
     <link
@@ -66,7 +66,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item nav_item">
-                <a class="nav-link" aria-current="page" href="/dist/index.html"
+                <a class="nav-link " aria-current="page" href="/dist/index.html"
                   >Home</a
                 >
               </li>
@@ -138,7 +138,7 @@
         <p>-----------------------</p>
         <div class="d-flex flex-column align-items-center">
           <svg
-            class="mb-2"
+            class="mb-2 active"
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -173,7 +173,7 @@
 
         <div class="d-flex flex-column align-items-center">
           <svg
-            class="mb-2"
+            class="mb-2 active"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -225,7 +225,7 @@
             </defs>
           </svg>
 
-          <p>Confirmation Order</p>
+          <p>Confirmation order</p>
         </div>
       </div>
     </section>
@@ -235,65 +235,91 @@
     <section class="cart_sec p-4">
       <div class="cart_sec_wrapper row m-0">
         <div class="cart_left col-lg-8">
-          <!-- Product details -->
-          <div
-            class="products_details align-items-center row m-0 bg-white rounded mb-3 p-2"
-          >
-            <div class="product_details_image col-md-3">
-              <div class="main_img ">
-                <img
-                  class="rounded"
-                  src="/dist/assets/products/product2.png"
-                  alt="Product one image"
-                />
-              </div>
-            </div>
-
-            <div class="product_detail col-md-8 d-flex flex-column ps-sm-5">
-              <div>
-                <span class="text_uppercase text_gray">Whole House filter</span>
-                <h3 class="head_second mb-0">Whole House Filter 1000 LPH</h3>
-              </div>
-              <div class="mt-1 ">
-                <img src="/dist/assets/greenPercent.svg" alt="Green Percent" />
-                <span class="text_green me-2">20%</span>
-                <span class="text_gray line_through me-2">$12000.00</span>
-                <span class="price price_big">$20000.00</span>
-              </div>
-              <div class="product_increaser mt-3 d-flex rounded">
-                <button id="product_decreaser">-</button>
-                <p class="m-0 product_value"></p>
-                <button id="product_increaser">+</button>
-              </div>
-              <div class="close">
-                <img
-                  src="/dist/assets/close-circle-outline.svg"
-                  alt="close button"
-                />
+          <!-- Third layout -->
+          <div class="form_sec_wrapper bg-white rounded-3 layout_3 p-4">
+            <div class="form_sec_main ps-5">
+              <div class="payment">
+                <div
+                  class="d-flex align-items-center text_gray justify-content-between mb-4"
+                >
+                  <h5 class="head_fifth">Amount to be paid :</h5>
+                  <span class="price price_big">₹199.00</span>
+                </div>
+                <small class="text_gray d-block mb-4">Pay with UPI QR</small>
+                <div class="d-flex gap-5 payment_qr">
+                  <figure class="d-block">
+                    <img src="/dist/assets/qrCode.svg" alt="QR Scanner" />
+                  </figure>
+                  <div>
+                    <small class="mb-3 d-block"
+                      >Scan the QR using any UPI app on your phone</small
+                    >
+                    <figure class="d-flex gap-3 mb-3">
+                      <img
+                        src="/dist/assets/payment ways/way1.png"
+                        alt="PAY for payment method"
+                      />
+                      <img
+                        src="/dist/assets/payment ways/way2.png"
+                        alt="PAY for payment method"
+                      />
+                      <img
+                        src="/dist/assets/payment ways/way3.png"
+                        alt="PAY for payment method"
+                      />
+                      <img
+                        src="/dist/assets/payment ways/way4.png"
+                        alt="PAY for payment method"
+                      />
+                    </figure>
+                    <small class="mt-4 d-block"
+                      >QR code is valid for<span class="text_red"> 12: 15 </span
+                      >minutes</small
+                    >
+                  </div>
+                </div>
+                <form class="mt-5">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-4"
+                  >
+                    <small class="">Credit/Debit card </small>
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      id="credit_checkbox"
+                    />
+                  </div>
+                  <div class="field d-flex flex-column gap-3 mb-4">
+                    <input type="text" placeholder="Card Number" />
+                    <input type="text" placeholder="Name on Card" />
+                    <div class="d-flex gap-3">
+                      <input type="text" placeholder="Valid through (MM/YY)" />
+                      <input type="text" placeholder="CVV" />
+                    </div>
+                  </div>
+                </form>
+                <div class="d-flex justify-content-between payment_button">
+                  <div>
+                    <span class="price text_gray d-block">₹199.00</span>
+                    <small class="text_gray">Amount to be paid</small>
+                  </div>
+                  <a
+                    href="order_confirmation.html"
+                    class="proceed_to_pay para text-white mb-2 product_btns main_btn"
+                  >
+                    Pay Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Product details End-->
-
-          <div class="notice rounded d-flex gap-4 p-4 ">
-            <div><img src="/dist/assets/30daysFrame.svg" alt="frame" /></div>
-            <div>
-              <h6 class="mb-2">30 days money back guarantee</h6>
-              <p class="para">
-                At Uniwater, our sole focus is providing best-in-class water
-                filtration products so every home can enjoy healthy,
-                great-tasting water. We're so confident you will love your
-                Uniwater filter that we offer a 90-day, no-questions asked,
-                trial period.
-              </p>
-            </div>
-          </div>
+          <!-- Third layout End -->
         </div>
-        <div class="cart_right bg-white col-lg-4 mt-4-md  rounded p-3">
-          <div class="cart_right_wrapper">
+
+        <div class="cart_right  col-lg-4 rounded p-3">
+          <div class="cart_right_wrapper bg-white p-4 pb-0">
             <div class="d-flex gap-4 mb-3">
-              <input type="text" class="rounded" placeholder="Promo code" />
-              <button class="apply main_btn bg-white rounded">Apply</button>
+              <h4 class="head_four">Order Summary</h4>
             </div>
             <div class="line"></div>
             <div class="bill mt-3">
@@ -311,18 +337,49 @@
               </p>
             </div>
             <div class="line"></div>
-            <div class="bill my-5">
+            <div class="bill my-5 p-3">
               <p>
                 <label for="subtotal">Total Amount</label>
                 <span id="subtotal" class="text_primary_color">$1900.00</span>
               </p>
             </div>
-            <a
-              href="shipping_info.html"
-              class="main_btn bg_primary_light text-white rounded justify-content-center"
+          </div>
+          <div class="cart_right_items bg-white p-3">
+            <div class="d-flex gap-4 mb-1">
+              <h4 class="head_four">Order Summary</h4>
+            </div>
+            <div class="line mb-1"></div>
+            <!-- Product details -->
+            <div
+              class="products_details align-items-center row m-0 bg-white rounded mb-3 "
             >
-              Proceed to Pay
-            </a>
+              <div class="product_details_image col-md-3">
+                <div class="main_img ">
+                  <img
+                    class="rounded"
+                    src="/dist/assets/products/product2.png"
+                    alt="Product one image"
+                  />
+                </div>
+              </div>
+
+              <div class="product_detail col-md-8 d-flex flex-column ps-sm-5">
+                <div>
+                  <h6 class="head_sixth mb-0">Whole House Filter 1000 LPH</h6>
+                </div>
+                <div class="mt-1 ">
+                  <img
+                    src="/dist/assets/greenPercent.svg"
+                    alt="Green Percent"
+                  />
+                  <span class="text_green me-2">20%</span>
+                  <span class="text_gray line_through me-2">$12000.00</span>
+                  <span class="price ">$20000.00</span>
+                </div>
+                <div><span>Qty. 1</span></div>
+              </div>
+            </div>
+            <!-- Product details End-->
           </div>
         </div>
       </div>

@@ -66,10 +66,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item nav_item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="/dist/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item nav_item">
-                <a class="nav-link" aria-current="page" href="product.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="product.html"
                   >Products</a
                 >
               </li>
@@ -162,7 +167,7 @@
               </clipPath>
             </defs>
           </svg>
-          <p>Your cart</p>
+          <p>Shipping Info</p>
         </div>
         <p>-----------------------</p>
 
@@ -193,9 +198,9 @@
             </defs>
           </svg>
 
-          <p>Your cart</p>
+          <p>Payment Info</p>
         </div>
-        <p>-----------------------</p>
+        <p>---------------------</p>
 
         <div class="d-flex flex-column align-items-center">
           <svg
@@ -220,7 +225,7 @@
             </defs>
           </svg>
 
-          <p>Your cart</p>
+          <p>Confirmation Order</p>
         </div>
       </div>
     </section>
@@ -231,14 +236,16 @@
       <div class="cart_sec_wrapper row m-0">
         <div class="cart_left col-lg-8">
           <!-- Product details -->
-          <div class="d-flex my-3 justify-content-between">
-            <h4 class="head_four">Select delivery Address</h4>
+          <div class="d-flex my-3 justify-content-between align-items-center">
+            <h4 class="head_four ">Select delivery Address</h4>
             <button
+              id="add_new_address"
               class="add_new_address main_btn text_primary_color rounded bg-white "
             >
               Add new Address
             </button>
           </div>
+          <!--  -->
           <div
             class="products_details align-items-center row m-0 bg-white rounded mb-3 p-2"
           >
@@ -273,57 +280,137 @@
               </div>
             </div>
           </div>
+          <!--  -->
           <!-- Product details End-->
+          <!--  -->
+          <div
+            class="products_details align-items-center row m-0 bg-white rounded mb-3 p-2"
+          >
+            <div class="col-md-1">
+              <input type="checkbox" />
+            </div>
 
-          <div class="notice rounded d-flex gap-4 p-4">
-            <div><img src="/dist/assets/30daysFrame.svg" alt="frame" /></div>
-            <div>
-              <h6 class="mb-2">30 days money back guarantee</h6>
-              <p class="para">
-                At Uniwater, our sole focus is providing best-in-class water
-                filtration products so every home can enjoy healthy,
-                great-tasting water. We're so confident you will love your
-                Uniwater filter that we offer a 90-day, no-questions asked,
-                trial period.
+            <div class="product_detail col-md-10 d-flex flex-column">
+              <p>Ashim Rai</p>
+              <p>
+                plot no. 45 abc colony, vaishali nagar, Jaipur, Rajasthan -
+                302012
+              </p>
+              <p>98658 65897</p>
+              <div class="close">
+                <img
+                  src="/dist/assets/close-circle-outline.svg"
+                  alt="close button"
+                />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <a
+            href="payment_info.html"
+            class=" bg_primary_light text-white main_btn rounded main_btn_full d-flex justify-content-center"
+          >
+            Next
+          </a>
+        </div>
+
+        <div class="cart_right  col-lg-4 rounded p-3">
+          <div class="cart_right_wrapper bg-white p-4 pb-0">
+            <div class="d-flex gap-4 mb-3">
+              <h4 class="head_four">Order Summary</h4>
+            </div>
+            <div class="line"></div>
+            <div class="bill mt-3">
+              <p>
+                <label for="subtotal">Sub Total</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+              <p>
+                <label for="subtotal">Shipping Cost</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+              <p>
+                <label for="subtotal">GST (@18 %)</label>
+                <span id="subtotal">$1900.00</span>
+              </p>
+            </div>
+            <div class="line"></div>
+            <div class="bill my-5 p-3">
+              <p>
+                <label for="subtotal">Total Amount</label>
+                <span id="subtotal" class="text_primary_color">$1900.00</span>
               </p>
             </div>
           </div>
-        </div>
-        <div class="cart_right bg-white col-lg-4 rounded p-3">
-          <div class="d-flex gap-4 mb-3">
-            <h4 class="head_four">Order Summary</h4>
+          <div class="cart_right_items bg-white p-3">
+            <div class="d-flex gap-4 mb-1">
+              <h4 class="head_four">Order Summary</h4>
+            </div>
+            <div class="line mb-1"></div>
+            <!-- Product details -->
+            <div
+              class="products_details align-items-center row m-0 bg-white rounded mb-3 "
+            >
+              <div class="product_details_image col-md-3">
+                <div class="main_img ">
+                  <img
+                    class="rounded"
+                    src="/dist/assets/products/product2.png"
+                    alt="Product one image"
+                  />
+                </div>
+              </div>
+
+              <div class="product_detail col-md-8 d-flex flex-column ps-sm-5">
+                <div>
+                  <h6 class="head_sixth mb-0">Whole House Filter 1000 LPH</h6>
+                </div>
+                <div class="mt-1 ">
+                  <img
+                    src="/dist/assets/greenPercent.svg"
+                    alt="Green Percent"
+                  />
+                  <span class="text_green me-2">20%</span>
+                  <span class="text_gray line_through me-2">$12000.00</span>
+                  <span class="price ">$20000.00</span>
+                </div>
+                <div><span>Qty. 1</span></div>
+              </div>
+            </div>
+            <!-- Product details End-->
           </div>
-          <div class="line"></div>
-          <div class="bill mt-3">
-            <p>
-              <label for="subtotal">Sub Total</label>
-              <span id="subtotal">$1900.00</span>
-            </p>
-            <p>
-              <label for="subtotal">Shipping Cost</label>
-              <span id="subtotal">$1900.00</span>
-            </p>
-            <p>
-              <label for="subtotal">GST (@18 %)</label>
-              <span id="subtotal">$1900.00</span>
-            </p>
-          </div>
-          <div class="line"></div>
-          <div class="bill my-5">
-            <p>
-              <label for="subtotal">Total Amount</label>
-              <span id="subtotal" class="text_primary_color">$1900.00</span>
-            </p>
-          </div>
-          <a
-            class="main_btn bg_primary_light text-white rounded justify-content-center"
-          >
-            Proceed to Pay
-          </a>
         </div>
       </div>
     </section>
     <!-- cart section End-->
+
+    <!-- Modal Form Adding Shipping Info -->
+    <section class="add_address show_address_form">
+      <div class="add_address_wrapper">
+        <form action="#" class="bg-white rounded">
+          <h5 class="head_fifth mb-4">Enter your shipping details</h5>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Phone Number" />
+          <input type="text" placeholder="address" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="City " />
+          <input type="text" placeholder="State" />
+          <input type="text" placeholder="PIN code" />
+          <div class="close close_address_form">
+            <img
+              src="/dist/assets/close-circle-outline.svg"
+              alt="close button"
+            />
+          </div>
+          <button
+            class="main_btn bg_primary_light text-white main_btn_full d-flex justify-content-center rounded mt-3"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Modal Form Adding Shipping Info End -->
 
     <!-- Footer  -->
     <footer>

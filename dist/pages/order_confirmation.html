@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Cart</title>
+    <title>Order Confirmation</title>
     <link rel="stylesheet" href="../css/main.css" />
     <!-- Bootstrap link -->
     <link
@@ -66,7 +66,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item nav_item">
-                <a class="nav-link" aria-current="page" href="/dist/index.html"
+                <a class="nav-link " aria-current="page" href="/dist/index.html"
                   >Home</a
                 >
               </li>
@@ -138,7 +138,7 @@
         <p>-----------------------</p>
         <div class="d-flex flex-column align-items-center">
           <svg
-            class="mb-2"
+            class="mb-2 active"
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -173,7 +173,7 @@
 
         <div class="d-flex flex-column align-items-center">
           <svg
-            class="mb-2"
+            class="mb-2 active"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -200,11 +200,11 @@
 
           <p>Payment Info</p>
         </div>
-        <p>--------------------</p>
+        <p>-------------------</p>
 
         <div class="d-flex flex-column align-items-center">
           <svg
-            class="mb-2"
+            class="mb-2 active"
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -225,19 +225,29 @@
             </defs>
           </svg>
 
-          <p>Confirmation Order</p>
+          <p>Order Confirmation</p>
         </div>
       </div>
     </section>
     <!-- Timeline  End-->
 
-    <!-- cart section -->
-    <section class="cart_sec p-4">
-      <div class="cart_sec_wrapper row m-0">
-        <div class="cart_left col-lg-8">
+    <!-- Confirmation Section -->
+    <section class="confirmation">
+      <img src="/dist/assets/GreenTick.svg" alt="confirmation tick" />
+      <h4 class="head_fourth text-center">
+        Thank you, your Order has been placed
+      </h4>
+    </section>
+    <!-- Confirmation Section End -->
+
+    <!-- Confirmed Product -->
+    <section class="confirmed_sec">
+      <div class="confirmed_sec_wrapper bg-white p-4 rounded">
+        <p>Order ID : 6589457</p>
+        <div class="d-flex justify-content-between flex-wrap">
           <!-- Product details -->
           <div
-            class="products_details align-items-center row m-0 bg-white rounded mb-3 p-2"
+            class="products_details align-items-center row m-0 bg-white rounded mb-3 "
           >
             <div class="product_details_image col-md-3">
               <div class="main_img ">
@@ -251,83 +261,80 @@
 
             <div class="product_detail col-md-8 d-flex flex-column ps-sm-5">
               <div>
-                <span class="text_uppercase text_gray">Whole House filter</span>
-                <h3 class="head_second mb-0">Whole House Filter 1000 LPH</h3>
+                <h6 class="head_sixth mb-0">Whole House Filter 1000 LPH</h6>
               </div>
               <div class="mt-1 ">
                 <img src="/dist/assets/greenPercent.svg" alt="Green Percent" />
                 <span class="text_green me-2">20%</span>
                 <span class="text_gray line_through me-2">$12000.00</span>
-                <span class="price price_big">$20000.00</span>
+                <span class="price ">$20000.00</span>
               </div>
-              <div class="product_increaser mt-3 d-flex rounded">
-                <button id="product_decreaser">-</button>
-                <p class="m-0 product_value"></p>
-                <button id="product_increaser">+</button>
-              </div>
-              <div class="close">
-                <img
-                  src="/dist/assets/close-circle-outline.svg"
-                  alt="close button"
-                />
-              </div>
+              <div><span>Qty. 1</span></div>
             </div>
           </div>
           <!-- Product details End-->
-
-          <div class="notice rounded d-flex gap-4 p-4 ">
-            <div><img src="/dist/assets/30daysFrame.svg" alt="frame" /></div>
-            <div>
-              <h6 class="mb-2">30 days money back guarantee</h6>
-              <p class="para">
-                At Uniwater, our sole focus is providing best-in-class water
-                filtration products so every home can enjoy healthy,
-                great-tasting water. We're so confident you will love your
-                Uniwater filter that we offer a 90-day, no-questions asked,
-                trial period.
-              </p>
-            </div>
+          <div>
+            <span>Delivered by</span>
+            <p>Wed, 22 March</p>
+          </div>
+          <div>
+            <span>Payment mode</span>
+            <p>visa - 4895</p>
+          </div>
+          <div>
+            <span>Delivery address</span>
+            <p>Shubham Singh,</p>
+            <p>plot no. 45 abc colony, vaishali nagar</p>
+            <p>Jaipur, Rajasthan - 302012</p>
           </div>
         </div>
-        <div class="cart_right bg-white col-lg-4 mt-4-md  rounded p-3">
-          <div class="cart_right_wrapper">
-            <div class="d-flex gap-4 mb-3">
-              <input type="text" class="rounded" placeholder="Promo code" />
-              <button class="apply main_btn bg-white rounded">Apply</button>
+      </div>
+      <a href="/dist/index.html" class="price">Go to your orders</a>
+    </section>
+    <!-- Confirmed Product End -->
+
+    <!-- Related Products -->
+    <!-- Scss on _solution.scss -->
+    <section class="related_products_sec">
+      <div class="related_products_sec_wrapper">
+        <h5 class="head_fifth mb-4">Related Products</h5>
+        <div class="related_products row gap-5">
+          <div class="product p-3 mb-4 rounded   col-lg-3">
+            <div class="product_img rounded my-4">
+              <img src="../assets/waterProducts.png" alt="water bottle" />
             </div>
-            <div class="line"></div>
-            <div class="bill mt-3">
-              <p>
-                <label for="subtotal">Sub Total</label>
-                <span id="subtotal">$1900.00</span>
-              </p>
-              <p>
-                <label for="subtotal">Shipping Cost</label>
-                <span id="subtotal">$1900.00</span>
-              </p>
-              <p>
-                <label for="subtotal">GST (@18 %)</label>
-                <span id="subtotal">$1900.00</span>
-              </p>
+            <h6>Iron Removal filter</h6>
+            <div class="d-flex gap-3">
+              <span class="">Starting From</span>
+              <p class="price">₹ 8,000.00</p>
             </div>
-            <div class="line"></div>
-            <div class="bill my-5">
-              <p>
-                <label for="subtotal">Total Amount</label>
-                <span id="subtotal" class="text_primary_color">$1900.00</span>
-              </p>
+          </div>
+
+          <div class="product p-3 mb-4 rounded  col-lg-3">
+            <div class="product_img rounded my-4">
+              <img src="../assets/waterProducts.png" alt="water bottle" />
             </div>
-            <a
-              href="shipping_info.html"
-              class="main_btn bg_primary_light text-white rounded justify-content-center"
-            >
-              Proceed to Pay
-            </a>
+            <h6>Iron Removal filter</h6>
+            <div class="d-flex gap-3">
+              <span class="">Starting From</span>
+              <p class="price">₹ 8,000.00</p>
+            </div>
+          </div>
+
+          <div class="product p-3 mb-4 rounded col-lg-3">
+            <div class="product_img rounded my-4">
+              <img src="../assets/waterProducts.png" alt="water bottle" />
+            </div>
+            <h6>Iron Removal filter</h6>
+            <div class="d-flex gap-3">
+              <span class="">Starting From</span>
+              <p class="price">₹ 8,000.00</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- cart section End-->
+    <!-- Related Products End -->
 
     <!-- Footer  -->
     <footer>

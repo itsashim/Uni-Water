@@ -79,4 +79,16 @@ $(document).ready(function () {
   console.log(productValueArr);
 
   // your_cart.html || your_cart.scss)(product_increaser) End
+
+  // Add new address
+  // shipping_info
+  $("#add_new_address").on("click", function () {
+    $(".add_address").toggleClass("show_address_form");
+  });
+
+  $(".close_address_form").on("click", function () {
+    $(".add_address").toggleClass("show_address_form");
+  });
+
+  // Add new address End
 });

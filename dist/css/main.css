@@ -130,6 +130,10 @@ a {
   cursor: pointer;
 }
 
+.main_btn_full {
+  width: 100% !important;
+}
+
 .product_btns {
   display: block;
   text-align: center;
@@ -895,6 +899,9 @@ footer {
   font-size: clamp(18px, 3vw, 22px);
   font-weight: 700;
 }
+.cart_sec .cart_sec_wrapper .cart_right {
+  background-color: transparent;
+}
 
 .cart_right_wrapper input {
   width: 100%;
@@ -930,6 +937,62 @@ footer {
 
 .add_new_address {
   border: 1px solid #0083cb;
+}
+
+.add_address {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 150%;
+  z-index: 999;
+  padding-top: 3rem;
+  background-image: url(/dist/assets/overlay.png);
+}
+.add_address .add_address_wrapper {
+  display: grid;
+  place-items: center;
+}
+.add_address .add_address_wrapper form {
+  position: relative;
+  max-width: 450px;
+  padding: 25px;
+}
+.add_address .add_address_wrapper form h5 {
+  color: #545454;
+}
+.add_address .add_address_wrapper form input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+  background-color: transparent;
+  border-radius: 4px;
+}
+.add_address .add_address_wrapper form .close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.show_address_form {
+  display: none;
+}
+
+.confirmation img {
+  display: block;
+  margin-inline: auto;
+}
+
+.confirmed_sec {
+  margin: 4rem 5%;
+}
+.confirmed_sec .confirmed_sec_wrapper .products_details {
+  max-width: 500px;
+}
+.confirmed_sec .confirmed_sec_wrapper span {
+  color: #545454;
+  font-weight: 600;
 }
 
 .main .hero_sec {
