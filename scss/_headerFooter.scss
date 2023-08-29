@@ -59,6 +59,10 @@
         i {
           font-size: 26px;
           color: $white;
+          cursor: pointer;
+          &:hover {
+            stroke: $primary_color;
+          }
         }
       }
     }

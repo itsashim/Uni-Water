@@ -354,6 +354,10 @@ a {
 .header_sec nav .nav_buttons figure i {
   font-size: 26px;
   color: #fff !important;
+  cursor: pointer;
+}
+.header_sec nav .nav_buttons figure i:hover {
+  stroke: #0083cb;
 }
 
 footer {
