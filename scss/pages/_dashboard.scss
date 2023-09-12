@@ -1,0 +1,177 @@
+.table_main {
+  background-color: #f6f9fa;
+}
+.table_header {
+  nav {
+    padding: 1.5rem;
+    background-color: $primary_light;
+  }
+  img {
+    width: 100%;
+  }
+  .profile_img {
+    min-width: 2rem;
+    width: 100%;
+  }
+}
+
+// Statistics Section
+.statistics_section {
+  margin: $margin_sec;
+  div {
+    border-radius: 8px;
+    border: 1px solid #b0b0b0;
+    width: 200px;
+    overflow: hidden;
+    span {
+      color: $gray_color;
+      font-weight: 500;
+    }
+    p {
+      background-color: #e6eff3;
+      color: #586c72;
+    }
+  }
+}
+// Statistics Section End
+
+// Dashborad table
+.table_sec {
+  // width: 100%;
+  margin: $margin_sec;
+  border-radius: 10px;
+  overflow: hidden;
+
+  //
+  .table_sec_search {
+    // overflow-x: scroll;
+    padding: 24px;
+    label[for="table_search"] {
+      border-radius: 4px;
+      border: 1px solid #b0b0b0;
+      display: flex;
+      width: 400px;
+      height: 48px;
+      align-items: center;
+      gap: 48px;
+      overflow: hidden;
+
+      input {
+        padding: 8px 8px 8px 24px;
+        border-radius: 4px;
+        border: none;
+        height: 100%;
+        width: 100%;
+        &::placeholder {
+          color: $gray_color;
+        }
+      }
+    }
+
+    label[for="filter_icon"] {
+      border-radius: 4px;
+      border: 1px solid #b0b0b0;
+      width: 48px;
+      height: 16px;
+      padding: 16px;
+      gap: 10px;
+      @include flexCenter;
+    }
+  }
+
+  //
+
+  .table_sec_wrapper {
+    overflow-x: scroll;
+
+    table {
+      // width: 90%;
+      // overflow-x: scroll;
+    }
+
+    thead {
+      padding: 10px 0;
+      border-top: 1px solid #b0b0b0;
+      border-bottom: 1px solid #b0b0b0;
+      th {
+        padding: 13px 20px;
+        font-weight: 500;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: $gray_color;
+      }
+      th:first-child {
+        min-width: 250px;
+      }
+      th:nth-child(3) {
+        min-width: 200px;
+      }
+      th:nth-child(5) {
+        min-width: 200px;
+      }
+    }
+    tbody {
+      tr:last-child {
+        border-bottom: transparent;
+      }
+
+      td {
+        padding: 13px 20px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #586c72;
+      }
+      td[data-cell="lead name"] {
+        .name_ {
+          padding: 13px 20px;
+          font-weight: 500;
+          font-size: 17px;
+          color: $gray_color;
+          padding-bottom: 0;
+          padding-left: 0;
+        }
+        span {
+          padding: 5px 20px;
+        }
+      }
+
+      .tag {
+        display: flex;
+        width: 95px;
+        padding: 4px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #e2edf0;
+      }
+      .pending {
+        color: #dfb362;
+        background-color: #fef8e8;
+      }
+      .completed {
+        color: #509786;
+        background-color: #e8f6f3;
+      }
+    }
+  }
+}
+// Dashborad table End
+
+// footer
+.dashboard_footer {
+  margin-bottom: 1rem;
+  .footer_wrap {
+    background-color: $primary_light;
+    padding: 1rem 5%;
+    border-radius: 10px;
+    p {
+      color: white;
+    }
+    .socials {
+      color: white;
+    }
+  }
+}
+// footer End

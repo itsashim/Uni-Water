@@ -91,4 +91,8 @@ $(document).ready(function () {
   });
 
   // Add new address End
+
+  // Data tables
+  // $("#table_id").DataTable();
+  // Data tables  End
 });

@@ -48,6 +48,16 @@
   }
   // product details section End
   // viewProduct.html
+
+  // Dashborad.html
+  // nav
+  .table_header {
+    button {
+      padding: 8px 10px;
+    }
+  }
+  // nav End
+  // Dashborad.html End
 }
 
 @include media-md {
@@ -104,6 +114,12 @@
     }
   }
   //  products page product -(relaetd product)  End
+
+  // dashboard
+  .table_sec_search {
+    overflow-x: scroll;
+  }
+  // dashboard End
 }
 
 @include media-lg {

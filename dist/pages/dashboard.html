@@ -1,1 +1,245 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Bootstrap data tables CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <!--Bootstrap data tables CDN End -->
+    <!-- External file link -->
+    <link rel="stylesheet" href="/dist/css/main.css " />
+    <!-- External file link End -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="table_header">
+      <nav class="d-flex align-items-center justify-content-between">
+        <div>
+          <img src="/dist/assets/Weblogo.png" alt="main Logo" />
+        </div>
+        <div class="d-flex gap-3 align-items-center">
+          <div>
+            <img
+              class="profile_img"
+              src="/dist/assets/Profile _pictureDemo.png"
+              alt="Profile picture"
+            />
+          </div>
+          <button class="main_btn rounded">
+            <i class="fa-solid fa-phone"></i>
+            Contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="table_main">
+      <!-- Statistics section -->
+      <section class="statistics_section d-flex gap-3 my-5 flex-wrap justify-content-md-start justify-content-center">
+        <div class="d-flex flex-column justify-content-between">
+          <span class="head_second text-center d-block mx-auto">567</span>
+          <p class="d-flex gap-2  p-2 mt-2 mb-0">
+            <img
+              src="/dist/assets/dashboard_elipse/Ellipse Blue.svg"
+              alt=""
+            />Total Active Leads
+          </p>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <span class="head_second text-center d-block mx-auto">450</span>
+          <p class="d-flex gap-2  p-2 mt-2 mb-0">
+            <img
+              src="/dist/assets/dashboard_elipse/EllipseGreeen.svg"
+              alt=""
+            />Completed Leads
+          </p>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <span class="head_second text-center d-block mx-auto">122</span>
+          <p class="d-flex gap-2  p-2 mt-2 mb-0">
+            <img
+              src="/dist/assets/dashboard_elipse/EllipseYellow.svg"
+              alt=""
+            />Pending Leads
+          </p>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <span class="head_second text-center d-block mx-auto">25</span>
+          <p class="d-flex gap-2  p-2 mt-2 mb-0">
+            <img
+              src="/dist/assets/dashboard_elipse/EllipseRed.svg"
+              alt=""
+            />Archived Leads
+          </p>
+        </div>
+      </section>
+      <!-- Statistics section End-->
+
+      <!-- Dashborad table  -->
+      <section class="table_sec">
+        <div class="table_sec_search bg-white d-flex justify-content-between">
+          <div class="d-flex gap-3 align-items-center">
+            <label for="table_search">
+              <input placeholder="Search lead" id="table_search" type="search">
+            </label>
+            <label for="filter_icon">
+              <svg id="filter_icon" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector" d="M5.55404 2.22434C5.25944 2.22434 4.9769 2.34137 4.76858 2.54969C4.56027 2.758 4.44323 3.04054 4.44323 3.33515C4.44323 3.62975 4.56027 3.91229 4.76858 4.12061C4.9769 4.32893 5.25944 4.44596 5.55404 4.44596C5.84865 4.44596 6.13119 4.32893 6.3395 4.12061C6.54782 3.91229 6.66485 3.62975 6.66485 3.33515C6.66485 3.04054 6.54782 2.758 6.3395 2.54969C6.13119 2.34137 5.84865 2.22434 5.55404 2.22434ZM2.41045 2.22434C2.63995 1.57392 3.06554 1.01071 3.62857 0.612322C4.19159 0.213937 4.86433 0 5.55404 0C6.24376 0 6.91649 0.213937 7.47952 0.612322C8.04254 1.01071 8.46814 1.57392 8.69763 2.22434H16.6621C16.9567 2.22434 17.2393 2.34137 17.4476 2.54969C17.6559 2.758 17.7729 3.04054 17.7729 3.33515C17.7729 3.62975 17.6559 3.91229 17.4476 4.12061C17.2393 4.32893 16.9567 4.44596 16.6621 4.44596H8.69763C8.46814 5.09637 8.04254 5.65959 7.47952 6.05797C6.91649 6.45636 6.24376 6.6703 5.55404 6.6703C4.86433 6.6703 4.19159 6.45636 3.62857 6.05797C3.06554 5.65959 2.63995 5.09637 2.41045 4.44596H1.11081C0.816204 4.44596 0.533666 4.32893 0.325349 4.12061C0.117031 3.91229 0 3.62975 0 3.33515C0 3.04054 0.117031 2.758 0.325349 2.54969C0.533666 2.34137 0.816204 2.22434 1.11081 2.22434H2.41045ZM12.2189 8.88919C11.9243 8.88919 11.6418 9.00622 11.4334 9.21454C11.2251 9.42286 11.1081 9.7054 11.1081 10C11.1081 10.2946 11.2251 10.5771 11.4334 10.7855C11.6418 10.9938 11.9243 11.1108 12.2189 11.1108C12.5135 11.1108 12.796 10.9938 13.0044 10.7855C13.2127 10.5771 13.3297 10.2946 13.3297 10C13.3297 9.7054 13.2127 9.42286 13.0044 9.21454C12.796 9.00622 12.5135 8.88919 12.2189 8.88919ZM9.07531 8.88919C9.3048 8.23878 9.73039 7.67556 10.2934 7.27717C10.8564 6.87879 11.5292 6.66485 12.2189 6.66485C12.9086 6.66485 13.5813 6.87879 14.1444 7.27717C14.7074 7.67556 15.133 8.23878 15.3625 8.88919H16.6621C16.9567 8.88919 17.2393 9.00622 17.4476 9.21454C17.6559 9.42286 17.7729 9.7054 17.7729 10C17.7729 10.2946 17.6559 10.5771 17.4476 10.7855C17.2393 10.9938 16.9567 11.1108 16.6621 11.1108H15.3625C15.133 11.7612 14.7074 12.3244 14.1444 12.7228C13.5813 13.1212 12.9086 13.3351 12.2189 13.3351C11.5292 13.3351 10.8564 13.1212 10.2934 12.7228C9.73039 12.3244 9.3048 11.7612 9.07531 11.1108H1.11081C0.816204 11.1108 0.533666 10.9938 0.325349 10.7855C0.117031 10.5771 0 10.2946 0 10C0 9.7054 0.117031 9.42286 0.325349 9.21454C0.533666 9.00622 0.816204 8.88919 1.11081 8.88919H9.07531ZM5.55404 15.554C5.25944 15.554 4.9769 15.6711 4.76858 15.8794C4.56027 16.0877 4.44323 16.3702 4.44323 16.6649C4.44323 16.9595 4.56027 17.242 4.76858 17.4503C4.9769 17.6586 5.25944 17.7757 5.55404 17.7757C5.84865 17.7757 6.13119 17.6586 6.3395 17.4503C6.54782 17.242 6.66485 16.9595 6.66485 16.6649C6.66485 16.3702 6.54782 16.0877 6.3395 15.8794C6.13119 15.6711 5.84865 15.554 5.55404 15.554ZM2.41045 15.554C2.63995 14.9036 3.06554 14.3404 3.62857 13.942C4.19159 13.5436 4.86433 13.3297 5.55404 13.3297C6.24376 13.3297 6.91649 13.5436 7.47952 13.942C8.04254 14.3404 8.46814 14.9036 8.69763 15.554H16.6621C16.9567 15.554 17.2393 15.6711 17.4476 15.8794C17.6559 16.0877 17.7729 16.3702 17.7729 16.6649C17.7729 16.9595 17.6559 17.242 17.4476 17.4503C17.2393 17.6586 16.9567 17.7757 16.6621 17.7757H8.69763C8.46814 18.4261 8.04254 18.9893 7.47952 19.3877C6.91649 19.7861 6.24376 20 5.55404 20C4.86433 20 4.19159 19.7861 3.62857 19.3877C3.06554 18.9893 2.63995 18.4261 2.41045 17.7757H1.11081C0.816204 17.7757 0.533666 17.6586 0.325349 17.4503C0.117031 17.242 0 16.9595 0 16.6649C0 16.3702 0.117031 16.0877 0.325349 15.8794C0.533666 15.6711 0.816204 15.554 1.11081 15.554H2.41045Z" fill="#545454"/>
+                </svg>
+                
+            </label>
+          </div>
+          <div>
+            <button id="download" class="main_btn bg_primary_light text-white rounded">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="material-symbols:download-rounded">
+              <path id="Vector" d="M12 15.575C11.8667 15.575 11.7417 15.5543 11.625 15.513C11.5083 15.4717 11.4 15.4007 11.3 15.3L7.7 11.7C7.51667 11.5167 7.425 11.2833 7.425 11C7.425 10.7167 7.51667 10.4833 7.7 10.3C7.88333 10.1167 8.121 10.021 8.413 10.013C8.705 10.005 8.94234 10.0923 9.125 10.275L11 12.15V5C11 4.71667 11.096 4.479 11.288 4.287C11.48 4.095 11.7173 3.99934 12 4C12.2833 4 12.521 4.096 12.713 4.288C12.905 4.48 13.0007 4.71734 13 5V12.15L14.875 10.275C15.0583 10.0917 15.296 10.004 15.588 10.012C15.88 10.02 16.1173 10.116 16.3 10.3C16.4833 10.4833 16.575 10.7167 16.575 11C16.575 11.2833 16.4833 11.5167 16.3 11.7L12.7 15.3C12.6 15.4 12.4917 15.471 12.375 15.513C12.2583 15.555 12.1333 15.5757 12 15.575ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V16C4 15.7167 4.096 15.479 4.288 15.287C4.48 15.095 4.71733 14.9993 5 15C5.28333 15 5.521 15.096 5.713 15.288C5.905 15.48 6.00067 15.7173 6 16V18H18V16C18 15.7167 18.096 15.479 18.288 15.287C18.48 15.095 18.7173 14.9993 19 15C19.2833 15 19.521 15.096 19.713 15.288C19.905 15.48 20.0007 15.7173 20 16V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z" fill="white"/>
+              </g>
+              </svg>
+               <span id="r_content">Download</span></button>
+          </div>
+        </div>
+        
+        <div class="table_sec_wrapper">
+        <table id="table_id" class="table m-0" >
+          <thead>
+            <tr>
+              <th>Lead Name</th>
+              <th>Contact</th>
+              <th>Lead Source</th>
+              <th>Status</th>
+              <th>Service</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-cell="lead name">
+                <span class="name_">Aditya Singh Rathore</span>
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-regular fa-clock"></i>Today at 10:00 Am</span
+                >
+              </td>
+              <td data-cell="contact">
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-regular fa-envelope"></i
+                  >adityasinghrathore0101@gmail.com</span
+                >
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-solid fa-phone"></i></i>+91 96582 78564</span
+                >
+              </td>
+              <td data-cell="lead source">
+                <div class="tag">website</div>
+              </td>
+              <td data-cell="status">
+                <div class="tag pending">pending</div>
+              </td>
+              <td data-cell="service">Whole house filter</td>
+              <td class="" data-cell="action">
+                
+                <div class="d-flex justify-content-center">
+
+                <svg width="5" height="21" viewBox="0 0 5 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group">
+                <path id="Vector" d="M0.25 10.5C0.25 11.7405 1.2595 12.75 2.5 12.75C3.7405 12.75 4.75 11.7405 4.75 10.5C4.75 9.2595 3.7405 8.25 2.5 8.25C1.2595 8.25 0.25 9.2595 0.25 10.5ZM0.25 18C0.25 19.2405 1.2595 20.25 2.5 20.25C3.7405 20.25 4.75 19.2405 4.75 18C4.75 16.7595 3.7405 15.75 2.5 15.75C1.2595 15.75 0.25 16.7595 0.25 18ZM0.25 3C0.25 4.2405 1.2595 5.25 2.5 5.25C3.7405 5.25 4.75 4.2405 4.75 3C4.75 1.7595 3.7405 0.75 2.5 0.75C1.2595 0.75 0.25 1.7595 0.25 3Z" fill="black"/>
+                </g>
+                </svg>
+              </div>
+
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="lead name">
+                <span class="name_">Aditya Singh Rathore</span>
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-regular fa-clock"></i>Today at 10:00 Am</span
+                >
+              </td>
+              <td data-cell="contact">
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-regular fa-envelope"></i
+                  >adityasinghrathore0101@gmail.com</span
+                >
+                <span class=" d-flex align-items-center gap-2"
+                  ><i class="fa-solid fa-phone"></i></i>+91 96582 78564</span
+                >
+              </td>
+              <td data-cell="lead source">
+                <div class="tag">website</div>
+              </td>
+              <td data-cell="status">
+                <div class="tag completed">completed</div>
+              </td>
+              <td data-cell="service">Whole house filter</td>
+              <td class="" data-cell="action">
+                
+                <div class="d-flex justify-content-center">
+
+                <svg width="5" height="21" viewBox="0 0 5 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group">
+                <path id="Vector" d="M0.25 10.5C0.25 11.7405 1.2595 12.75 2.5 12.75C3.7405 12.75 4.75 11.7405 4.75 10.5C4.75 9.2595 3.7405 8.25 2.5 8.25C1.2595 8.25 0.25 9.2595 0.25 10.5ZM0.25 18C0.25 19.2405 1.2595 20.25 2.5 20.25C3.7405 20.25 4.75 19.2405 4.75 18C4.75 16.7595 3.7405 15.75 2.5 15.75C1.2595 15.75 0.25 16.7595 0.25 18ZM0.25 3C0.25 4.2405 1.2595 5.25 2.5 5.25C3.7405 5.25 4.75 4.2405 4.75 3C4.75 1.7595 3.7405 0.75 2.5 0.75C1.2595 0.75 0.25 1.7595 0.25 3Z" fill="black"/>
+                </g>
+                </svg>
+              </div>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+         </div>
+
+      </section>
+      <!-- Dashborad table  End-->
+    </main>
+    <!-- footer -->
+    <footer class="dashboard_footer">
+      <div class="footer_wrap d-flex align-items-center justify-content-between">
+       
+          <div>
+            <img src="/dist/assets/Weblogo.png" alt="main Logo" />
+          </div>
+          <div><p class="m-0">Copyright © 2023 Uniwater Solutions | Powered by Uniwater Solution</p></div>
+          <div class="socials d-flex gap-2">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+
+    <!-- font awesome cdn link -->
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- jquery cdn  End-->
+    <!-- data table cdn -->
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- data table cdn End-->
+
+    <!-- Font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/5cfe83b03e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome cd link end -->
+
+    <!-- External js file  -->
+    <script src="/dist/script.js"></script>
+    <!-- External js file   End-->
+  </body>
+</html>
