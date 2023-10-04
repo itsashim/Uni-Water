@@ -10,8 +10,15 @@
     width: 100%;
   }
   .profile_img {
-    min-width: 2rem;
-    width: 100%;
+    img {
+      min-width: 2rem;
+      width: 100%;
+    }
+    div {
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 0 35px 1px #00000094;
+    }
   }
 }
 
@@ -83,11 +90,6 @@
 
   .table_sec_wrapper {
     overflow-x: scroll;
-
-    table {
-      // width: 90%;
-      // overflow-x: scroll;
-    }
 
     thead {
       padding: 10px 0;
