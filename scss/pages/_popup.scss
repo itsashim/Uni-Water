@@ -1,5 +1,14 @@
 // Every popup needs this same file
 
+.popup_wrap {
+  background-color: rgba(0, 0, 0, 0.484);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 10rem;
+}
+
 .popup {
   background-color: $alert_bg_color;
   width: 65%;
@@ -26,8 +35,8 @@
       }
     }
     .close_btn {
-      img {
-        width: 2rem;
+      h1 {
+        cursor: pointer;
       }
     }
   }

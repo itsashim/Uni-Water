@@ -69,7 +69,8 @@
             color: white;
           }
 
-          select {
+          p {
+            cursor: pointer;
             background: transparent;
             border: none;
             margin-top: 5px;
@@ -83,9 +84,6 @@
             &::placeholder {
               font-size: 1rem;
               color: black !important;
-            }
-            option {
-              color: black;
             }
           }
 
@@ -117,11 +115,27 @@
     padding: 8px 0;
     margin-bottom: 3rem;
     background-color: #004361;
+    height: 3rem;
+    position: relative;
+
     .marque {
+      display: flex;
+      gap: 2rem;
       text-transform: capitalize;
       justify-content: end;
       color: white;
-      animation: inline-scroll 10s linear 0s infinite;
+      top: 50%;
+      transform: translate(0, -50%);
+      position: absolute;
+      right: 0;
+      // border: 1px solid red;
+      animation: inline-scroll 8s linear 0s infinite;
+      // width: 100%;
+      div {
+        overflow: hidden;
+        width: 100%;
+        min-width: 300px;
+      }
     }
   }
   // Marquee Section end
@@ -242,6 +256,19 @@
   .testimonial_sec {
     .testimonial_sec_wrapper {
       padding: 4rem 4%;
+
+      .owl-dots .owl-dot:nth-child(2) {
+        display: none;
+      }
+      .owl-dots .owl-dot:nth-child(3) {
+        display: none;
+      }
+      .owl-dots .owl-dot:nth-child(5) {
+        display: none;
+      }
+      .owl-dots .owl-dot:nth-child(6) {
+        display: none;
+      }
     }
 
     .testimonial_header {

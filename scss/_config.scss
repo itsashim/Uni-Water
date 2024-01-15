@@ -80,10 +80,11 @@ $margin_sec: 4rem 5%;
 
 @keyframes inline-scroll {
   0% {
-    transform: translate(0, 0);
+    right: -40%;
   }
   100% {
-    transform: translate(-100%, 0);
+    right: 110%;
+    // display: none;
   }
 }
 

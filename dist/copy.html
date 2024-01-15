@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+
+
+     .pricing_sec {
+      background-color: white;
+      padding: 2rem 4%;
+      position: relative;
+    }
+     .pricing_sec .pricing {
+      border: 1px solid #b0cdda;
+      border-radius: 16px;
+    }
+     .pricing_sec .pricing_sec_wrapper {
+      margin: 4rem 5%;
+      border-bottom: 1px solid #e6e6e6;
+      width: 90%;
+    }
+     .pricing_sec .pricing_sec_wrapper .btn_group .pricing_btn {
+      border-radius: 100px;
+      border: none;
+      padding: 12px 52px;
+      background-color: #e6eff3;
+      color: #545454;
+      min-width: 260px;
+    }
+     .pricing_sec .pricing_sec_wrapper .btn_group .pricing_btn h5 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+    }
+     .pricing_sec .pricing_sec_wrapper .btn_group .pricing_btn_active.active {
+      color: white !important;
+      background-image: linear-gradient(87deg, #007c7c 0%, #008b62 100%) !important;
+      background-color: none;
+    }
+     .pricing_sec .pricing_sec_wrapper .btn_group .pricing_btn_active.active .price {
+      color: #fff !important;
+    }
+     .pricing_sec .product_wrapper {
+      display: none !important;
+      background-color: #effafb;
+      gap: 2rem;
+      padding: 2rem 4% 10rem 4%;
+    }
+     .pricing_sec .product_wrapper.active {
+      display: flex !important;
+    }
+     .pricing_sec .product_wrapper .product_wrapper_img_div {
+      max-width: 450px;
+      width: 50%;
+    }
+     .pricing_sec .product_wrapper .product_wrapper_img_div img {
+      width: 95%;
+    }
+     .pricing_sec .product_wrapper .pricing_product {
+      width: 100%;
+      padding: 2rem 4%;
+      box-shadow: 0px 4px 20px 2px rgba(45, 95, 171, 0.25);
+      border-radius: 8px;
+    }
+     .pricing_sec .product_wrapper .pricing_product .pricing_content_head {
+      width: 70%;
+    }
+     .pricing_sec .alert_ {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -160%);
+      border-radius: 4px;
+      padding: 10px 0;
+      background-color: #ffedd9;
+      width: 85%;
+    }
+    .pricing_sec .alert_ p {
+      color: #ff8a00 !important;
+    }
+  </style>
+
+  <body>
+    <!-- pricing -->
+    <section class="pricing_sec">
+      <div class="pricing">
+        <div class="pricing_sec_wrapper">
+          <h3 class="head_second text-center">Clean Water as Service</h3>
+          <p class="para text-center mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            consequatur
+          </p>
+
+          <div
+            role="tablist"
+            class="nav nav-pills btn_group d-flex gap-4 justify-content-start justify-content-md-center flex-nowrap flex-md-wrap mb-2 overflow-auto"
+          >
+            <button
+              id="pricing_product_one-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pricing_product_one"
+              type="button"
+              role="tab"
+              aria-controls="pricing_product_one"
+              aria-selected="true"
+              class="nav-link active d-flex flex-column pricing_btn pricing_btn_active"
+            >
+              <h5>drinking water</h5>
+              <span class="d-flex">
+                <p class="m-0">Starting at</p>
+                &nbsp;
+                <span class="price">$1 per liter</span>
+              </span>
+            </button>
+            <button
+              id="pricing_product_two-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pricing_product_two"
+              type="button"
+              role="tab"
+              aria-controls="pricing_product_two"
+              aria-selected="false"
+              class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+            >
+              <h5>drinking water</h5>
+              <span class="d-flex">
+                <p class="m-0">Starting at</p>
+                &nbsp;
+                <span class="price">$1 per liter</span>
+              </span>
+            </button>
+            <button
+              id="pricing_product_three-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pricing_product_three"
+              type="button"
+              role="tab"
+              aria-controls="pricing_product_three"
+              aria-selected="false"
+              class="nav-link d-flex flex-column pricing_btn pricing_btn_active"
+            >
+              <h5>drinking water</h5>
+              <span class="d-flex">
+                <p class="m-0">Starting at</p>
+                &nbsp;
+                <span class="price">$1 per liter</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- Pricing Product -->
+
+        <!-- Product one -->
+        <div
+          id="pricing_product_one"
+          role="tabpanel"
+          aria-labelledby="pricing_product_one-tab"
+          tabindex="0"
+          class="tab-pane fade show active product_wrapper d-lg-flex justify-content-center"
+        >
+          <div class="product_wrapper_img_div mx-auto align-self-center">
+            <img
+              src="assets/girlimage.png"
+              alt="Girl dirking water in a glass"
+            />
+          </div>
+          <div class="pricing_product bg-white">
+            <div class="d-md-flex justify-content-between">
+              <div class="pricing_content_head">
+                <h4 class="head_fourth">Drinking water</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  suscipit earum ullam nesciunt laudantium, rem iure maiores
+                  totam quas odit fuga repellat eligendi corporis aut!
+                  Doloribus.
+                </p>
+              </div>
+              <div class="text-end-lg">
+                <h5>Starting at just</h5>
+                <p class="price">$1 per liter</p>
+              </div>
+            </div>
+            <div class="">
+              <h4 class="head_fourth">Available model</h4>
+              <ul>
+                <li class="para">Single outlet</li>
+                <li class="para">Multi outlet</li>
+                <li class="para">Centralized</li>
+              </ul>
+              <div class="buttons_grp d-sm-flex justify-content-between gap-2 ">
+                <button class="para text-white mb-2 product_btns">
+                  Book a visit
+                </button>
+                <a
+                  href="/dist/pages/talk_to_sales.html"
+                  class="para bg-white mb-2 product_btns"
+                >
+                  Talk to sales
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product one End-->
+
+        <!-- Product two -->
+        <div
+          id="pricing_product_two"
+          role="tabpanel"
+          aria-labelledby="pricing_product_two-tab"
+          tabindex="0"
+          class="tab-pane fade product_wrapper d-lg-flex justify-content-center"
+        >
+          <div class="product_wrapper_img_div mx-auto align-self-center">
+            <img
+              src="assets/softWaterImage.png"
+              alt="Girl dirking water in a glass"
+            />
+          </div>
+          <div class="pricing_product bg-white">
+            <div class="d-md-flex justify-content-between">
+              <div class="pricing_content_head">
+                <h4 class="head_fourth">Drinking water</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  suscipit earum ullam nesciunt laudantium, rem iure maiores
+                  totam quas odit fuga repellat eligendi corporis aut!
+                  Doloribus.
+                </p>
+              </div>
+              <div class="text-end-lg">
+                <h5>Starting at just</h5>
+                <p class="price">$1 per liter</p>
+              </div>
+            </div>
+            <div class="">
+              <h4 class="head_fourth">Available model</h4>
+              <ul>
+                <li class="para">Single outlet</li>
+                <li class="para">Multi outlet</li>
+                <li class="para">Centralized</li>
+              </ul>
+              <div class="buttons_grp d-sm-flex justify-content-between gap-2">
+                <button class="para text-white mb-2 product_btns">
+                  Book a visit
+                </button>
+                <a
+                  href="/dist/pages/talk_to_sales.html"
+                  class="para bg-white mb-2 product_btns"
+                >
+                  Talk to sales
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product two end -->
+
+        <!-- Product three -->
+        <div
+          id="pricing_product_three"
+          role="tabpanel"
+          aria-labelledby="pricing_product_three-tab"
+          tabindex="0"
+          class=" tab-pane fade  product_wrapper d-lg-flex justify-content-center "
+        >
+          <div class="product_wrapper_img_div mx-auto align-self-center">
+            <img
+              src="assets/ironWater.png"
+              alt="Girl dirking water in a glass"
+            />
+          </div>
+          <div class="pricing_product bg-white">
+            <div class="d-md-flex justify-content-between">
+              <div class="pricing_content_head">
+                <h4 class="head_fourth">Drinking water</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  suscipit earum ullam nesciunt laudantium, rem iure maiores
+                  totam quas odit fuga repellat eligendi corporis aut!
+                  Doloribus.
+                </p>
+              </div>
+              <div class="text-end-lg">
+                <h5>Starting at just</h5>
+                <p class="price">$1 per liter</p>
+              </div>
+            </div>
+            <div class="">
+              <h4 class="head_fourth">Available model</h4>
+              <ul>
+                <li class="para">Single outlet</li>
+                <li class="para">Multi outlet</li>
+                <li class="para">Centralized</li>
+              </ul>
+              <div class="buttons_grp d-sm-flex justify-content-between gap-2">
+                <button class="para text-white mb-2 product_btns">
+                  Book a visit
+                </button>
+                <a
+                  href="/dist/pages/talk_to_sales.html"
+                  class="para bg-white mb-2 product_btns"
+                >
+                  Talk to sales
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product three end -->
+
+        <!-- Pricing Product End-->
+        <!-- alert  -->
+        <div class="alert_">
+          <p class="para m-0 text-center px-5">
+            For a visit a visiting charge of ₹ 199 will be charged which will be
+            later on adjusted in your overall billing amount.
+          </p>
+        </div>
+        <!-- alert end -->
+      </div>
+    </section>
+    <!-- pricing End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
